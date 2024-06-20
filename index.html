@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Homepage</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	
+	<link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+
+	
+
+
+</head>
+
+
+<body>
+  
+  
+    
+
+
+    
+    <div class="greet">
+      <img class="avatar" src="avatar.svg" alt="avatar">
+     <h2 class="hello">Hello, 
+         <button onclick="showPopup()"> <span id="name">Ronak</span></h2></button>
+
+    </div>
+    
+
+  
+  <div class="search">
+<form id="searchForm" class="engine" action="https://www.google.com/search">
+  <input class="search-bar" type="text" name="q" id="searchInput" list="suggestions" placeholder="Search on Google..." autocomplete="on">
+  </form>
+  </div>
+  
+  <div class="icons">
+   
+  
+       <a href="https://m.youtube.com"><i class="lni lni-youtube"></i></a>
+       
+         <a href="https://news.google.com"><i class="lni lni-rss-feed"></i></a>
+         
+         <a href="Notepad/notepad.html"><i class="lni lni-notepad"></i></a>
+       
+
+              <p id="timeElement"></p>
+  </div>
+  
+
+
+
+  
+  
+  
+   <div class="wrapper">
+  <div class="weather">
+    <p id="temperature"></p>
+    <p id="city-name"></p>
+    <p id="description"></p>
+  </div>
+   </div>
+  
+  <div id="popup" class="popup">
+  <label for="newName">Enter new name</label>
+  <input type="text" id="newName">
+  <button class="update" onclick="updateName()">Update</button>
+   <button onclick="closePopup()">Close</button>
+</div>
+  
+  
+ 
+     <div class="container">
+        <h1>Latest News</h1>
+        <ul id="news-list"></ul>
+    </div>
+ 
+  	<script src="script.js"></script>
+</body>
+</html>
