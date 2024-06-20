@@ -31,6 +31,3 @@ We welcome contributions! If you have ideas for improvements or new features, fe
 
 Have feedback or questions? We'd love to hear from you! Reach out to us via ronakameta65@gmail.com
 
----
-
-Feel free to customize this template further to better fit your project's specifics and add any additional sections you find relevant!
