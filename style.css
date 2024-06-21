@@ -496,7 +496,7 @@ li {
   }
   popup > button:hover, .city > button:hover {
    background-color: var(--accent);
-          color: #eeeeee;
+          color: #1e1e1e;
           transform: scale(1.1);
 }
 }
