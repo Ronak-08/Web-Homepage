@@ -17,9 +17,7 @@ font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
 }
 
-html {
-  color: var(--text);
-}
+
 
 body {
  background: linear-gradient(to top, #121212,#121212,#121212,#121212,#025f5f);
