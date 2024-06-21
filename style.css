@@ -231,7 +231,7 @@ a:hover{
   color: var(--accent);
 }
 
-#news-list {
+.feed-title > h4 {
   padding: 2px;
   margin: 5px;
 
