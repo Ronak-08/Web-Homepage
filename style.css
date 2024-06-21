@@ -488,3 +488,10 @@ li {
     width: 300px ;
   }
 }
+
+@media (prefers-color-scheme:dark)
+{
+  .hello > button {
+    background: linear-gradient(to right, #d0d0d0,#03a8a88e , #00ffff);
+  }
+}
