@@ -232,9 +232,12 @@ a:hover{
 }
 
 .feed-title {
-  padding: 2px;
-  margin: 5px;
+  padding: 10px;
+  margin: 10px;
+}
 
+.feed-item-title {
+  margin: 10px;
 }
 
 a{
