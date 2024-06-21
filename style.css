@@ -489,31 +489,3 @@ li {
   }
 }
 
-@media (prefers-color-scheme:dark)
-{
-  .hello > button {
-    background: linear-gradient(to right, #d0d0d0,#03a8a88e , #00ffff);
-  }
-  popup > button:hover, .city > button:hover {
-   background-color: var(--accent);
-          color: #1e1e1e;
-          transform: scale(1.1);
-}
-.city {
-  color: black; !important
-}
-.weather {
-  display: flex;
-  margin-top:3vh;
-  margin-bottom: 6vh;
-  flex-direction: column;
- width: 90%;
-
-  border-radius: 16px;
-  align-items: left;
-  padding: 5px 5px 5px 15px;
-  word-spacing: -2px;
- transition: 0.2s ease;
-  background: linear-gradient(45deg, #13a9f8e4,#75c6fce4,#fee6b3e4 );
-}
-}
