@@ -232,9 +232,15 @@ a:hover{
 }
 
 h3 {
-  padding: 10px;
-  margin: 10px;
   font-size: 24px;
+  text-align: center;
+    border-radius: 16px;
+    padding: 20px;
+    background: linear-gradient(to right, #4df9ff,#09d6dd , #057977);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+border-bottom: 1px solid var(--accent);
+  margin: 5px;
 }
 
 h4 {
