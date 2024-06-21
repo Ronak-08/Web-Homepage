@@ -231,7 +231,7 @@ a:hover{
   color: var(--accent);
 }
 
-.feed-title > h4 {
+.feed-title > h3 {
   padding: 2px;
   margin: 5px;
 
