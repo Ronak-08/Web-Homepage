@@ -30,25 +30,6 @@ updateTime();
 	
 	
 
-document.addEventListener('DOMContentLoaded', function () {
-    const apiKey = '7dd9bf2a56f94ec392bdb14d716199e3'; // Replace with your News API key
-    const newsUrl = `https://newsapi.org/v2/top-headlines?country=in&apiKey=${apiKey}`;
-
-    fetch(newsUrl)
-        .then(response => response.json())
-        .then(data => {
-            const articles = data.articles;
-            const newsList = document.getElementById('news-list');
-
-            articles.forEach(article => {
-                const li = document.createElement('li');
-                li.innerHTML = `<h4><a href="${article.url}" target="_blank">${article.title}</a></h4>
-                          `;
-                newsList.appendChild(li);
-            });
-        })
-        .catch(error => console.log('Error fetching news:', error));
-});
 
 
 const apiKey = 'db5a5dd4233284f22f468c35dad5f8ff';
