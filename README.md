@@ -4,6 +4,8 @@
 
 Welcome to our awesome homepage project! This is more than just a homepage – it's your personalized gateway to the web.
 
+You can try it here: https://my-webpage01.netlify.app
+
 ## Features 🚀
 
 - **Interactive Icons:** Quickly access your favorite websites with just a click.
