@@ -22,6 +22,8 @@ https://ronak-08.github.io/Web-Homepage
 
 ![screenshot](Images/IMG_20240622_143525.jpg)
 
+![screenshot](Images/Screenshot_20240622-201749.png)
+
 ## Get Started 🛠️
 
 1. Clone the repository.
