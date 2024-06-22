@@ -74,9 +74,9 @@ margin: 10px;
 
   .popup {
     display: none;
-    position: absolute;
+    position: fixed;
     top: 350px;
-   
+    left: 50%;
   
     background-color: var(--bg);
     padding: 20px;
