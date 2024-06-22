@@ -102,6 +102,9 @@ window.onload = function() {
 };
 
 
+
+
+
 document.getElementById('backgroundToggle').addEventListener('change', function() {
     if (this.checked) {
         const imageUrl = 'https://picsum.photos/1920/1080/?random&blur';
