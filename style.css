@@ -173,7 +173,7 @@ border: 1px solid var(--accent); /* Border color on hover */
   justify-content: center;
   margin: 10px;
   margin-bottom: 45px;
-
+flex-wrap: wrap;
 }
 .icons > a{
    background: #4a4648;
