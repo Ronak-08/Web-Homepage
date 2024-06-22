@@ -105,17 +105,24 @@ window.onload = function() {
 
 
 
-document.getElementById('backgroundToggle').addEventListener('change', function() {
-    if (this.checked) {
-        const imageUrl = 'https://picsum.photos/1920/1080/?random&blur';
-        document.body.style.backgroundImage = `url(${imageUrl})`;
-        document.body.style.backgroundSize = 'cover';
+const checkbox = document.getElementById('backgroundToggle');
+
+function setBackground() {
+    const imageUrl = 'https://picsum.photos/1920/1080/?random&blur';
+    document.body.style.backgroundImage = `url(${imageUrl})`;
+    document.body.style.backgroundSize = 'cover';
+}
+
+function handleCheckboxChange() {
+    if (checkbox.checked) {
+        localStorage.setItem('backgroundToggle', 'checked');
+        setBackground();
     } else {
+        localStorage.removeItem('backgroundToggle');
         document.body.style.backgroundImage = '';
         document.body.style.backgroundColor = '#121212';
     }
-});
-
+}
 
 // Check the localStorage to set the checkbox state on page load
 if (localStorage.getItem('backgroundToggle') === 'checked') {
