@@ -295,6 +295,8 @@ h4 {
 .feed-item-title {
   background-color: #191919;
   border-radius: 16px;
+  padding: 10px;
+  margin: 5px;
 }
 
 
