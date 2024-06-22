@@ -4,7 +4,8 @@
 
 Welcome to our awesome homepage project! This is more than just a homepage – it's your personalized gateway to the web.
 
-You can try it here: https://my-webpage01.netlify.app
+## You can try it here:
+https://my-webpage01.netlify.app
 
 ## Features 🚀
 
@@ -17,7 +18,8 @@ You can try it here: https://my-webpage01.netlify.app
 
 ## Screenshots 📷
 
-![Homepage Preview](link-to-screenshot.png)
+![Example](https://i.ibb.co/DKFdcYn/Screenshot-20240622-135338.png)
+![Homepage Preview](https://i.ibb.co/z5bqpY1/Screenshot-20240622-135800.png)
 
 ## Get Started 🛠️
 
