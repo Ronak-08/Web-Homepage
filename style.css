@@ -170,7 +170,7 @@ border: 1px solid var(--accent); /* Border color on hover */
   padding: 5px;
   border: none;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   margin: 10px;
   margin-bottom: 45px;
 flex-wrap: wrap;
