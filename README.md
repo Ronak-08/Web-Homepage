@@ -18,8 +18,7 @@ https://my-webpage01.netlify.app
 
 ## Screenshots 📷
 
-![Example](https://i.ibb.co/DKFdcYn/Screenshot-20240622-135338.png)
-![Homepage Preview](https://i.ibb.co/z5bqpY1/Screenshot-20240622-135800.png)
+*coming soon*
 
 ## Get Started 🛠️
 
