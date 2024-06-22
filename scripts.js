@@ -102,29 +102,19 @@ window.onload = function() {
 };
 
 
+document.getElementById('backgroundToggle').addEventListener('change', function() {
+    if (this.checked) {
+        const imageUrl = 'https://picsum.photos/1920/1080/?random&blur';
+        document.body.style.backgroundImage = `url(${imageUrl})`;
+        document.body.style.backgroundSize = 'cover';
+    } else {
+        document.body.style.backgroundImage = '';
+        document.body.style.backgroundColor = '#121212';
+    }
+});
 
-function showLinkPopup() {
-  var linkPopup = document.getElementById('linkPopup');
-  linkPopup.style.display = 'flex';
-}
 
-function closeLinkPopup() {
-  var linkPopup = document.getElementById('linkPopup');
-  linkPopup.style.display = 'none';
-}
 
-function addLink() {
-  var newLink = document.getElementById('newLink').value;
-  var newLinkName = document.getElementById('newLinkName').value;
-  var iconsDiv = document.querySelector('.icons');
-  
-  var newAnchor = document.createElement('a');
-  newAnchor.href = newLink;
-  newAnchor.innerHTML = `<i class="lni lni-link"></i> ${newLinkName}`;
-  
-  iconsDiv.insertBefore(newAnchor, document.getElementById('timeElement'));
-  closeLinkPopup();
-}
 
 
 
