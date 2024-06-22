@@ -292,6 +292,11 @@ h4 {
   padding: 10px;
 
 }
+.feed-item-title {
+  background-color: #191919;
+  border-radius: 16px;
+}
+
 
 .feed-title  {
 padding: 10px;
