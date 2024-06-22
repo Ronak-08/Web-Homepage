@@ -20,7 +20,7 @@ https://ronak-08.github.io/Web-Homepage
 
 ## Screenshots 📷
 
-*coming soon*
+![screenshot](Images/IMG_20240622_143525.jpg)
 
 ## Get Started 🛠️
 
