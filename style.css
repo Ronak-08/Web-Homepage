@@ -166,7 +166,7 @@ border: 1px solid var(--accent); /* Border color on hover */
 
 .icons {
   display: flex;
-  font-size: 24px;
+ 
   padding: 5px;
   border: none;
   align-items: center;
@@ -184,6 +184,7 @@ flex-wrap: wrap;
   margin: 10px;
   text-decoration: none;
   transition: 0.2s ease;
+   font-size: 24px;
 }
 
 .icons > a:hover, #timeElement:hover {
