@@ -22,7 +22,7 @@ html {
 }
 
 body {
- background: linear-gradient(to top, #121212,#121212,#121212,#121212,#025f5f);
+ background: linear-gradient(to top, #121212,#121212,#121212,#121212,#025f5f) no-repeat center center fixed;
   
  
 
