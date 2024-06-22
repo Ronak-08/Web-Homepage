@@ -75,7 +75,7 @@ margin: 10px;
   .popup {
     display: none;
     position: absolute;
-    top: 50%;
+    top: 350px;
     left: 50%;
   
     background-color: var(--bg);
