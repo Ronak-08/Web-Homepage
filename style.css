@@ -176,6 +176,9 @@ border: 1px solid var(--accent); /* Border color on hover */
 flex-wrap: wrap;
 }
 .icons > a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
    background: #4a4648;
   border-radius: 45px;
   padding: 10px;
