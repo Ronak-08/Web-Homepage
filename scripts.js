@@ -114,7 +114,21 @@ document.getElementById('backgroundToggle').addEventListener('change', function(
 });
 
 
+// Check the localStorage to set the checkbox state on page load
+if (localStorage.getItem('backgroundToggle') === 'checked') {
+    checkbox.checked = true;
+    setBackground();
+}
 
+// Add event listener to the checkbox
+checkbox.addEventListener('change', handleCheckboxChange);
+
+// Set an interval to change the background every 60 minutes (3600000 milliseconds)
+setInterval(() => {
+    if (checkbox.checked) {
+        setBackground();
+    }
+}, 3600000);
 
 
 
