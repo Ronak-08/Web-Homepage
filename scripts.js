@@ -143,34 +143,6 @@ setInterval(() => {
 
 
 
-
-document.getElementById('showColorPicker').addEventListener('click', function() {
-    document.getElementById('colorPicker').click();
-});
-
-
-
-document.getElementById('colorPicker').addEventListener('input', function() {
-    let selectedColor = this.value;
-    
-    document.documentElement.style.setProperty('--accent', selectedColor);
-    
-   
-});
-
-
-document.getElementById('showColorPicker').addEventListener('click', function() {
-    document.getElementById('colorPicker').click();
-});
-
-document.getElementById('colorPicker').addEventListener('input', function() {
-    let hexColor = this.value;
-    let rgbaColor = hexToRgba(hexColor, 0.329); // Always set alpha to 0.329 (33% opacity)
-
-    // Update CSS variable for search bar color
-    document.documentElement.style.setProperty('--srcbar', rgbaColor);
-});
-
 // Function to convert hex to RGBA with fixed alpha
 function hexToRgba(hex, alpha) {
     // Remove the hash at the start if it's there
@@ -185,3 +157,39 @@ function hexToRgba(hex, alpha) {
     // Return RGBA string with fixed alpha
     return `rgba(${r},${g},${b},${alpha})`;
 }
+
+// Function to set color and save to localStorage
+function setColorAndSave(hexColor) {
+    let rgbaColor = hexToRgba(hexColor, 0.329); // Fixed transparency
+    document.documentElement.style.setProperty('--srcbar', rgbaColor);
+    
+    // Save selected color to localStorage
+    localStorage.setItem('selectedColor', hexColor);
+}
+
+// Function to initialize color on page load
+function initializeColor() {
+    // Retrieve selected color from localStorage
+    let selectedColor = localStorage.getItem('selectedColor');
+    if (selectedColor) {
+        setColorAndSave(selectedColor);
+        // Set color picker value to match stored color
+        document.getElementById('colorPicker').value = selectedColor;
+    }
+}
+
+// Event listener for color picker input
+document.getElementById('colorPicker').addEventListener('input', function() {
+    let hexColor = this.value;
+    setColorAndSave(hexColor);
+});
+
+// Event listener for button to show color picker
+document.getElementById('showColorPicker').addEventListener('click', function() {
+    document.getElementById('colorPicker').click();
+});
+
+// Call initializeColor() when the page loads
+document.addEventListener('DOMContentLoaded', function() {
+    initializeColor();
+});
