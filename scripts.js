@@ -168,7 +168,7 @@ document.getElementById('colorPicker').addEventListener('input', function() {
     let rgbaColor = hexToRgba(hexColor, 0.329); // Always set alpha to 0.329 (33% opacity)
 
     // Update CSS variable for search bar color
-    document.documentElement.style.setProperty('--search-bar-color', rgbaColor);
+    document.documentElement.style.setProperty('--srcbar', rgbaColor);
 });
 
 // Function to convert hex to RGBA with fixed alpha
