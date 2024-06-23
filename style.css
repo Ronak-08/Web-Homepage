@@ -5,7 +5,7 @@
 :root {
   --bg: #121212;      /* Dark gray background */
   --text: #ffffff;    /* White text */
-  --accent: rgb(0,255,255);  /* Coral accent */
+  --accent: 0,255,255;  /* Coral accent */
 }
 
 
