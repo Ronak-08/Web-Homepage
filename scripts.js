@@ -163,6 +163,8 @@ function setColorAndSave(hexColor) {
     let rgbaColor = hexToRgba(hexColor, 0.329); // Fixed transparency
     document.documentElement.style.setProperty('--srcbar', rgbaColor);
     
+    document.documentElement.style.setProperty('--accent', rgbaColor);
+    
     // Save selected color to localStorage
     localStorage.setItem('selectedColor', hexColor);
 }
