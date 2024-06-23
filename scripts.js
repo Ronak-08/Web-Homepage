@@ -158,3 +158,30 @@ document.getElementById('colorPicker').addEventListener('input', function() {
    
 });
 
+
+document.getElementById('showColorPicker').addEventListener('click', function() {
+    document.getElementById('colorPicker').click();
+});
+
+document.getElementById('colorPicker').addEventListener('input', function() {
+    let hexColor = this.value;
+    let rgbaColor = hexToRgba(hexColor, 0.329); // Always set alpha to 0.329 (33% opacity)
+
+    // Update CSS variable for search bar color
+    document.documentElement.style.setProperty('--search-bar-color', rgbaColor);
+});
+
+// Function to convert hex to RGBA with fixed alpha
+function hexToRgba(hex, alpha) {
+    // Remove the hash at the start if it's there
+    hex = hex.replace(/^#/, '');
+    
+    // Parse r, g, b values
+    let bigint = parseInt(hex, 16);
+    let r = (bigint >> 16) & 255;
+    let g = (bigint >> 8) & 255;
+    let b = bigint & 255;
+
+    // Return RGBA string with fixed alpha
+    return `rgba(${r},${g},${b},${alpha})`;
+}
