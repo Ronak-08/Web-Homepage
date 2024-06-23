@@ -6,7 +6,6 @@
   --bg: #121212;      /* Dark gray background */
   --text: #ffffff;    /* White text */
   --accent: rgb(0,255,255);  /* Coral accent */
-  --srcbar : 0,255,255 ;
 }
 
 
@@ -146,7 +145,7 @@ border: none;
   margin-bottom: 6px;
   outline: none;
   -webkit-tap-highlight-color: transparent;
-  background-color: rgba(var(--srcbar), 0.329);
+  background-color: var(--accent);
   font-size: 14px;
   font-weight: 600;
   transition: 0.2s ease;
