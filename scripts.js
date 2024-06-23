@@ -159,22 +159,30 @@ function hexToRgba(hex, alpha) {
 }
 
 // Function to set color and save to localStorage
-function setColorAndSave(hexColor) {
-    let rgbaColor = hexToRgba(hexColor, 0.329); // Fixed transparency
-    document.documentElement.style.setProperty('--srcbar', rgbaColor);
+function setColorAndSave(variableName, hexColor, alpha = 1) {
+    let cssVariable = `--${variableName}`;
+    let colorValue = alpha === 1 ? hexColor : hexToRgba(hexColor, alpha);
     
-    document.documentElement.style.setProperty('--accent', rgbaColor);
+    // Update CSS variable
+    document.documentElement.style.setProperty(cssVariable, colorValue);
     
     // Save selected color to localStorage
-    localStorage.setItem('selectedColor', hexColor);
+    localStorage.setItem(variableName, hexColor);
 }
 
-// Function to initialize color on page load
-function initializeColor() {
+// Function to initialize colors on page load
+function initializeColors() {
+    initializeColor('accent');
+    initializeColor('srcbar');
+}
+
+// Function to initialize specific color on page load
+function initializeColor(variableName) {
     // Retrieve selected color from localStorage
-    let selectedColor = localStorage.getItem('selectedColor');
+    let selectedColor = localStorage.getItem(variableName);
     if (selectedColor) {
-        setColorAndSave(selectedColor);
+        let alpha = variableName === 'accent' ? 1 : 0.329; // Set alpha based on variable
+        setColorAndSave(variableName, selectedColor, alpha);
         // Set color picker value to match stored color
         document.getElementById('colorPicker').value = selectedColor;
     }
@@ -183,7 +191,7 @@ function initializeColor() {
 // Event listener for color picker input
 document.getElementById('colorPicker').addEventListener('input', function() {
     let hexColor = this.value;
-    setColorAndSave(hexColor);
+    setColorAndSave('srcbar', hexColor, 0.329); // Always set alpha to 0.329 (33% opacity)
 });
 
 // Event listener for button to show color picker
@@ -191,7 +199,7 @@ document.getElementById('showColorPicker').addEventListener('click', function() 
     document.getElementById('colorPicker').click();
 });
 
-// Call initializeColor() when the page loads
+// Call initializeColors() when the page loads
 document.addEventListener('DOMContentLoaded', function() {
-    initializeColor();
+    initializeColors();
 });
