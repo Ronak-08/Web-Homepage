@@ -155,6 +155,6 @@ document.getElementById('colorPicker').addEventListener('input', function() {
     
     document.documentElement.style.setProperty('--accent', selectedColor);
     
-    document.documentElement.style.setProperty('--srcbar', selectedColor)
+   
 });
 
