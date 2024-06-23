@@ -145,7 +145,7 @@ border: none;
   margin-bottom: 6px;
   outline: none;
   -webkit-tap-highlight-color: transparent;
-  background: #00ffff54;
+  background: rgba(var(--accent), 0.329);
   font-size: 14px;
   font-weight: 600;
   transition: 0.2s ease;
