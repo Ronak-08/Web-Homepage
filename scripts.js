@@ -142,3 +142,14 @@ setInterval(() => {
 
 
 
+
+
+document.getElementById('showColorPicker').addEventListener('click', function() {
+    document.getElementById('colorPicker').click();
+});
+
+document.getElementById('colorPicker').addEventListener('input', function() {
+    let selectedColor = this.value;
+    document.documentElement.style.setProperty('--accent', selectedColor);
+});
+
