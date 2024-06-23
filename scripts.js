@@ -149,10 +149,14 @@ document.getElementById('showColorPicker').addEventListener('click', function() 
 });
 
 document.getElementById('colorPicker').addEventListener('input', function() {
+    let hexColor = this.value;
+    let rgbColor = hexToRgb(hexColor);
+
+document.getElementById('colorPicker').addEventListener('input', function() {
     let selectedColor = this.value;
     
-    document.documentElement.style.setProperty('--accent', selectedColor);
+    document.documentElement.style.setProperty('--accent', rgbColor);
     
-    document.documentElement.style.setProperty('--srcbar', selectedColor)
+    document.documentElement.style.setProperty('--srcbar', rgbColor)
 });
 
