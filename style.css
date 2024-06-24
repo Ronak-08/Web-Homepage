@@ -530,7 +530,10 @@ li {
   padding: 10px;
   font-size: 20px;
 }
+.popup {
+  width: 45%;
 }
+
 
 
 @media only screen and (min-width: 768px) {
