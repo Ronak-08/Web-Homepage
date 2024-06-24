@@ -126,6 +126,7 @@ margin: 10px;
 label {
   font-weight: 500;
   color: var(--accent);
+  font-size: 18px;
 
 }
 
