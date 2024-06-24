@@ -135,7 +135,7 @@ margin: 10px;
 .popup > button:hover, .city > button:hover , #showColorPicker:hover {
    background-color: var(--accent);
           color: #353434;
-          transform: scale(1.1);
+          transform: scale(1.04);
 }
 
 
