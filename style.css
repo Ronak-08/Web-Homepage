@@ -119,7 +119,7 @@ margin: 10px;
 label {
   font-weight: 600;
   color: var(--accent);
-  text-align: center;
+
 }
 
 .popup > button:hover, .city > button:hover , #showColorPicker:hover {
