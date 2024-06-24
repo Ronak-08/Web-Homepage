@@ -418,7 +418,7 @@ border: 2px solid var(--accent);
 .switch {
   position: relative;
   display: inline-block;
-  width: 60px;
+  width: 55px;
   height: 30px;
 }
 
