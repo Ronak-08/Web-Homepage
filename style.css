@@ -100,6 +100,7 @@ margin: 10px;
   border: none;
   width: 100%;
   height: 46px;
+  transition: 0.3s ease;
 }
 
 #newName:hover {
