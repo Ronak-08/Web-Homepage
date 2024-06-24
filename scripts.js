@@ -218,43 +218,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-document.getElementById('settings-button').addEventListener('click', () => {
-    const drawer = document.getElementById('settings-drawer');
-    if (!drawer.classList.contains('active')) {
-        fetch('settings.html')
-            .then(response => response.text())
-            .then(data => {
-                drawer.innerHTML = data;
-                addSettingsListeners();
-                drawer.classList.add('active');
-            });
-    } else {
-        drawer.classList.remove('active');
-    }
-});
 
-function addSettingsListeners() {
-    const newsToggle = document.getElementById('news-toggle');
-    
-    // Check local storage for the initial state
-    if (localStorage.getItem('newsEnabled') === 'false') {
-        newsToggle.checked = false;
-        document.getElementById('news-container').style.display = 'none';
-    } else {
-        newsToggle.checked = true;
-        document.getElementById('news-container').style.display = 'block';
-    }
-
-    newsToggle.addEventListener('change', (event) => {
-        if (event.target.checked) {
-            document.getElementById('container').style.display = 'block';
-            localStorage.setItem('newsEnabled', 'true');
-        } else {
-            document.getElementById('container').style.display = 'none';
-            localStorage.setItem('newsEnabled', 'false');
-        }
-    });
-}
 
 
 
