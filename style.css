@@ -280,7 +280,7 @@ h3 {
    text-align: center;
     border-radius: 16px;
     padding: 20px;
-    background: linear-gradient(to right, #4df9ff,#09d6dd , #057977);
+    background: linear-gradient(to right, var(--accent),white , var(--srcbar));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 border-bottom: 1px solid var(--accent);
