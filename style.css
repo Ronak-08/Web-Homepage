@@ -117,6 +117,7 @@ margin: 10px;
 }
 
 .popup > button {
+  display: flex;
    padding: 7px;
   border-radius: 32pc;
   border:none;
