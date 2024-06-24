@@ -88,10 +88,8 @@ margin: 10px;
     border-radius: 16px;
    width: 350px;
    transition: 0.2s ease;
-  }
-  
-  .popup:hover {
-    border: 1.7px solid rgb(140 147 136);
+ 
+    border: 1.6px solid rgb(140 147 136);
   }
 
 #newName {
