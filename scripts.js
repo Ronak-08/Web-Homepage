@@ -173,7 +173,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 // Function to set the color to both the CSS variable and local storage
-function setColorAndStore(color) {
+function setColorAndStor(color) {
     document.documentElement.style.setProperty('--srcbar', color);
     localStorage.setItem('selectedColor', color);
 }
@@ -189,7 +189,7 @@ document.getElementById('colorPicker').addEventListener('input', function() {
     let rgbaColor = hexToRgba(hexColor, 0.329); // Always set alpha to 0.329 (33% opacity)
 
     // Set the color and store it in local storage
-    setColorAndStore(rgbaColor);
+    setColorAndStor(rgbaColor);
 });
 
 // Function to convert hex to RGBA with fixed alpha
@@ -211,6 +211,6 @@ function hexToRgba(hex, alpha) {
 document.addEventListener('DOMContentLoaded', function() {
     let storedColor = localStorage.getItem('selectedColor');
     if (storedColor) {
-        setColorAndStore(storedColor);
+        setColorAndStor(storedColor);
     }
 });
