@@ -20,13 +20,13 @@ font-family: "Open Sans", sans-serif;
 
 html {
   color: var(--text);
-   backdrop-filter: brightness(0.6); 
+ 
 }
 
 body {
  background: linear-gradient(to top, #121212,#121212,#121212,#121212,var(--srcbar)) no-repeat center center fixed;
  background-size: cover;
-
+  backdrop-filter: brightness(0.6); 
  
 
 }
