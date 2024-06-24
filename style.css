@@ -23,7 +23,7 @@ html {
 }
 
 body {
- background: linear-gradient(to top, #121212,#121212,#121212,#121212,#025f5f) no-repeat center center fixed;
+ background: linear-gradient(to top, #121212,#121212,#121212,#121212,var(--srcbar)) no-repeat center center fixed;
  background-size: cover;
   backdrop-filter: brightness(0.6);
  
