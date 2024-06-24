@@ -528,7 +528,7 @@ li {
 }
 .popup {
   max-width: 40%;
-  align-items: center;
+position: absolute;
 }
 
 
