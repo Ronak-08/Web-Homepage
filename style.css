@@ -124,12 +124,8 @@ margin: 10px;
      gap: 3px;
 }
 
-label {
-  font-weight: 500;
-  color: var(--accent);
-  font-size: 18px;
 
-}
+
 
 .popup > button:hover, .city > button:hover , #showColorPicker:hover {
    background-color: var(--accent);
