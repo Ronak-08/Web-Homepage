@@ -209,8 +209,8 @@ function hexToRgba(hex, alpha) {
 
 // Check local storage on page load to set the color if it was previously selected
 document.addEventListener('DOMContentLoaded', function() {
-    let storedColor = localStorage.getItem('selectedColor');
-    if (storedColor) {
-        setColorAndStor(storedColor);
+    let storedColo = localStorage.getItem('selectedColor');
+    if (storedColo) {
+        setColorAndStor(storedColo);
     }
 });
