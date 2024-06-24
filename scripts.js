@@ -109,8 +109,8 @@ const checkbox = document.getElementById('backgroundToggle');
 
 function setBackground() {
     const imageUrl = 'https://picsum.photos/1920/1080/?random&blur';
-    document.body.style.backgroundImage = `url(${imageUrl})`;
-    document.body.style.backgroundSize = 'cover';
+    document.documentElement.style.backgroundImage = `url(${imageUrl})`;
+    document.documentElement.style.backgroundSize = 'cover';
 }
 
 function handleCheckboxChange() {
