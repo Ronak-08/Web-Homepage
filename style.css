@@ -404,6 +404,7 @@ border: 2px solid var(--accent);
   background-color: #363636;
   color: var(--text);
   border: none;
+  transition: 0.2s ease;
 }
 
 
@@ -424,6 +425,15 @@ border: 2px solid var(--accent);
    margin: 50px 0px 40px 0px;
    padding: 25px;
 }
+#showColorPicker {
+  position: absolute;
+  padding: 8px;
+  margin: 0px;
+  top: 100px;
+}
+
+
+
 .weather{
   width: 120px;
   height: 90px;
