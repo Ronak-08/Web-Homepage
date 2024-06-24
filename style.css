@@ -436,8 +436,8 @@ border: 2px solid var(--accent);
   right: 0;
   bottom: 0;
   background-color: #ccc;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 .slider:before {
