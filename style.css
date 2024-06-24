@@ -529,6 +529,7 @@ li {
 .popup {
   max-width: 40%;
 position: absolute;
+left: 50%;
 }
 
 
