@@ -175,7 +175,7 @@ document.addEventListener('DOMContentLoaded', function() {
 // Function to set the color to both the CSS variable and local storage
 function setColorAndStor(color) {
     document.documentElement.style.setProperty('--srcbar', color);
-    localStorage.setItem('selectedColor', color);
+    localStorage.setItem('selectedColo', color);
 }
 
 // Event listener for clicking the button to show the color picker
@@ -209,7 +209,7 @@ function hexToRgba(hex, alpha) {
 
 // Check local storage on page load to set the color if it was previously selected
 document.addEventListener('DOMContentLoaded', function() {
-    let storedColo = localStorage.getItem('selectedColor');
+    let storedColo = localStorage.getItem('selectedColo');
     if (storedColo) {
         setColorAndStor(storedColo);
     }
