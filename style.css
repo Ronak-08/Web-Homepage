@@ -419,7 +419,7 @@ border: 2px solid var(--accent);
   position: relative;
   display: inline-block;
   width: 60px;
-  height: 34px;
+  height: 30px;
 }
 
 .switch input { 
