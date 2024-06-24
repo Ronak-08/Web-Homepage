@@ -172,16 +172,24 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
+// Function to set the color to both the CSS variable and local storage
+function setColorAndStore(color) {
+    document.documentElement.style.setProperty('--srcbar', color);
+    localStorage.setItem('selectedColor', color);
+}
+
+// Event listener for clicking the button to show the color picker
 document.getElementById('showColorPicker').addEventListener('click', function() {
     document.getElementById('colorPicker').click();
 });
 
+// Event listener for when the color picker value changes
 document.getElementById('colorPicker').addEventListener('input', function() {
     let hexColor = this.value;
     let rgbaColor = hexToRgba(hexColor, 0.329); // Always set alpha to 0.329 (33% opacity)
 
-    // Update CSS variable for search bar color
-    document.documentElement.style.setProperty('--srcbar', rgbaColor);
+    // Set the color and store it in local storage
+    setColorAndStore(rgbaColor);
 });
 
 // Function to convert hex to RGBA with fixed alpha
@@ -198,3 +206,11 @@ function hexToRgba(hex, alpha) {
     // Return RGBA string with fixed alpha
     return `rgba(${r},${g},${b},${alpha})`;
 }
+
+// Check local storage on page load to set the color if it was previously selected
+document.addEventListener('DOMContentLoaded', function() {
+    let storedColor = localStorage.getItem('selectedColor');
+    if (storedColor) {
+        setColorAndStore(storedColor);
+    }
+});
