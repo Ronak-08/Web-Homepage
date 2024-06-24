@@ -397,6 +397,19 @@ border: 2px solid var(--accent);
   padding: 0px 5px 5px;
 }
 
+#showColorPicker {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 32pc;
+  background-color: #363636;
+  color: var(--text);
+}
+
+
+
+
+
+
 @media screen and (min-width:992px) {
 .search{
   display: flex;
