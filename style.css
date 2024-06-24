@@ -78,7 +78,7 @@ margin: 10px;
     display: none;
     position: fixed;
     top: 350px;
-  
+  flex-wrap: wrap;
     background-color: rgb(16 20 15);
     padding: 24px;
     color:var(--text);
