@@ -102,6 +102,10 @@ margin: 10px;
   height: 40px;
 }
 
+#newName {
+  border: 1.3px solid var(--accent);
+}
+
 .update {
   padding: 5px 7px 5px 7px;
   border-radius: 32pc;
