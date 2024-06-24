@@ -443,8 +443,8 @@ border: 2px solid var(--accent);
 .slider:before {
   position: absolute;
   content: "";
-  height: 26px;
-  width: 26px;
+  height: 23px;
+  width: 23px;
   left: 4px;
   bottom: 4px;
   background-color: white;
