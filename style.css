@@ -341,7 +341,7 @@ margin-bottom: 2vh;
    font-size: 35px;
   font-weight: 700;
 padding: 4px 10px 4px 10px;
-background: linear-gradient(to right, white, #8efdfd,#8efdfdb1);
+background: linear-gradient(to right, white, var(--accent),var(--srcbar));
 border-radius:32pc;
 border: none;
 color: black;
