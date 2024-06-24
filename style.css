@@ -109,12 +109,7 @@ margin: 10px;
   border: 1.3px solid var(--accent);
 }
 
-.update {
-  padding: 5px 7px 5px 7px;
-  border-radius: 32pc;
- border:none;
-  margin: 10px;
-}
+
 
 .popup > button {
   display: flex;
