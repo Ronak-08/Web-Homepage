@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function showPopup() {
   var popup = document.getElementById('popup');
-  popup.style.display = 'block';
+  popup.style.display = 'flex';
 }
 
 function updateName() {
