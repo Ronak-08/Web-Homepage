@@ -144,18 +144,31 @@ setInterval(() => {
 
 
 
+// Function to set the color to both the CSS variable and local storage
+function setColorAndStore(color) {
+    document.documentElement.style.setProperty('--accent', color);
+    localStorage.setItem('selectedColor', color);
+}
+
+// Event listener for clicking the button to show the color picker
 document.getElementById('showColorPicker').addEventListener('click', function() {
     document.getElementById('colorPicker').click();
 });
 
-
-
+// Event listener for when the color picker value changes
 document.getElementById('colorPicker').addEventListener('input', function() {
     let selectedColor = this.value;
     
-    document.documentElement.style.setProperty('--accent', selectedColor);
-    
-   
+    // Set the color and store it in local storage
+    setColorAndStore(selectedColor);
+});
+
+// Check local storage on page load to set the color if it was previously selected
+document.addEventListener('DOMContentLoaded', function() {
+    let storedColor = localStorage.getItem('selectedColor');
+    if (storedColor) {
+        setColorAndStore(storedColor);
+    }
 });
 
 
