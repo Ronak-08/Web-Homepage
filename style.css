@@ -420,6 +420,7 @@ border: 2px solid var(--accent);
   display: inline-block;
   width: 58px;
   height: 32px;
+  margin-left:20px ;
 }
 
 .switch input { 
