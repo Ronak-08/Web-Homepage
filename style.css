@@ -102,7 +102,7 @@ margin: 10px;
   height: 40px;
 }
 
-#newName {
+#newName:hover {
   border: 1.3px solid var(--accent);
 }
 
