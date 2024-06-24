@@ -250,7 +250,7 @@ function addSettingsListeners() {
             document.getElementById('container').style.display = 'block';
             localStorage.setItem('newsEnabled', 'true');
         } else {
-            document.getElementById('news-container').style.display = 'none';
+            document.getElementById('container').style.display = 'none';
             localStorage.setItem('newsEnabled', 'false');
         }
     });
