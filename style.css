@@ -533,6 +533,7 @@ li {
 .popup {
   width: 45%;
   justify-content: center;
+  align-items: center;
 }
 
 
