@@ -121,7 +121,7 @@ label {
   color: var(--text);
 }
 
-.popup > button:hover, .city > button:hover {
+.popup > button:hover, .city > button:hover , #showColorPicker:hover {
    background-color: var(--accent);
           color: #353434;
           transform: scale(1.1);
