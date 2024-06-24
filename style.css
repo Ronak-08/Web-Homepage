@@ -435,7 +435,7 @@ border: 2px solid var(--accent);
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ccc;
+  background-color: var(--srcbar);
   -webkit-transition: .3s;
   transition: .3s;
 }
