@@ -108,12 +108,13 @@ margin: 10px;
 }
 
 .popup > button {
-   padding: 5px;
+   padding: 8px;
   border-radius: 32pc;
   border:none;
   margin-top: 20px;
      transition: 0.2s ease;
      font-size: 14px
+     gap: 10px;
 }
 
 label {
