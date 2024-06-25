@@ -507,10 +507,8 @@ input:checked + .slider:before {
 #colorPicker {
   margin-left: 70px;
 }
-.setList {
-  padding-bottom: 18px;
-}
 
+.settings > li {
 
 
 @media screen and (min-width:992px) {
