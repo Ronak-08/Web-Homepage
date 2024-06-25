@@ -488,7 +488,7 @@ input:checked + .slider:before {
 }
 
 .settings p {
-    margin: 0; /* Remove default margin for better alignment */
+    margin: 5px;
 }
  
 
