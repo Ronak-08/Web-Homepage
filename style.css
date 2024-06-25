@@ -488,11 +488,7 @@ input:checked + .slider:before {
     margin: 0; /* Remove default margin for better alignment */
 }
 
-.settings .switch {
-    margin-left: 10px; /* Optional: Adjust if you need extra spacing on the left of the switch */
-    display: flex;
-    align-items: center;
-}
+
 
 
 
