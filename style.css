@@ -114,14 +114,14 @@ margin: 10px;
 
 .popup > button {
   display: flex;
-   padding: 9px;
+   padding: 10px;
   border-radius: 32pc;
   border:none;
   margin: 20px 5px 10px 14px ;
      transition: 0.2s ease;
      font-size: 12px
      gap: 3px;
-     background-color: #464646;
+     background-color: #46464600;
      color: var(--accent);
     height: 30px;
     align-items: center;
