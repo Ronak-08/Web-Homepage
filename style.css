@@ -129,7 +129,7 @@ margin: 10px;
 
 
 
-.popup > button:hover, .city > button:hover , #showColorPicker:hover {
+.popup > button:hover, .city > button:hover  {
    background-color: var(--accent);
           color: #353434;
           transform: scale(1.04);
@@ -405,15 +405,7 @@ border: 2px solid var(--accent);
   padding: 0px 5px 5px;
 }
 
-#showColorPicker {
-  padding: 6px;
-  margin: 10px;
-  border-radius: 32pc;
-  background-color: #363636;
-  color: var(--text);
-  border: none;
-  transition: 0.2s ease;
-}
+
 
 .settings .switch {
   position: relative;
@@ -528,13 +520,7 @@ input:checked + .slider:before {
    margin: 50px 0px 40px 0px;
    padding: 25px;
 }
-#showColorPicker {
-  position: absolute;
-  padding: 8px;
-  margin: 0px;
-  top: 230px;
-  left: 116px;
-}
+
 
 
 
