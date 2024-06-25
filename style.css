@@ -449,7 +449,7 @@ border: 2px solid var(--accent);
   width: 23px;
   left: 4px;
   bottom: 4px;
-  background-color: var(--srcbar);
+  background-color: black;
   -webkit-transition: .4s;
   transition: .4s;
 }
