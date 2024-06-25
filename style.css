@@ -480,6 +480,7 @@ input:checked + .slider:before {
 
 .settings > h2 {
   text-align: center;
+  font-weight: 700;
 }
 
 .settings .1set {
