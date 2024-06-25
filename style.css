@@ -491,7 +491,7 @@ input:checked + .slider:before {
 }
 
 .settings p {
-    margin: 5px;
+    margin-left: 15px;
     padding: 10px;
 }
  
