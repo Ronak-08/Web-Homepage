@@ -445,10 +445,10 @@ margin-left: 130px;
 .slider:before {
   position: absolute;
   content: "";
-  height: 23px;
-  width: 23px;
+  height: 21px;
+  width: 21px;
   left: 4px;
-  bottom: 4px;
+  bottom: 6px;
   background-color: black;
   -webkit-transition: .4s;
   transition: .4s;
