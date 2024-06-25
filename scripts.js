@@ -151,9 +151,7 @@ function setColorAndStore(color) {
 }
 
 // Event listener for clicking the button to show the color picker
-document.getElementById('showColorPicker').addEventListener('click', function() {
-    document.getElementById('colorPicker').click();
-});
+
 
 // Event listener for when the color picker value changes
 document.getElementById('colorPicker').addEventListener('input', function() {
@@ -179,9 +177,7 @@ function setColorAndStor(color) {
 }
 
 // Event listener for clicking the button to show the color picker
-document.getElementById('showColorPicker').addEventListener('click', function() {
-    document.getElementById('colorPicker').click();
-});
+
 
 // Event listener for when the color picker value changes
 document.getElementById('colorPicker').addEventListener('input', function() {
