@@ -421,6 +421,7 @@ border: 2px solid var(--accent);
   width: 58px;
   height: 32px;
   margin-left:120px ;
+  backdrop-filter: brightness(0.6);
 }
 
 .switch input { 
