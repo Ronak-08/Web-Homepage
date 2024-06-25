@@ -509,7 +509,7 @@ input:checked + .slider:before {
   margin-left: 70px;
 }
 
-.settings > li {
+.settings > .setList > li {
   margin-bottom: 16px;
 }
 
