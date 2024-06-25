@@ -491,7 +491,7 @@ input:checked + .slider:before {
     align-items: center;
     gap: 10px; /* Adjust the gap value as needed */
     margin-top: 15px;
-    padding: 10px;
+    padding: 20px;
   
 }
 
