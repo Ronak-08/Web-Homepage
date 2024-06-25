@@ -508,7 +508,7 @@ input:checked + .slider:before {
   margin-left: 70px;
 }
 .setList {
-  margin-bottom: 18px;
+  padding-bottom: 18px;
 }
 
 
