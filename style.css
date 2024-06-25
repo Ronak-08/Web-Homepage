@@ -421,7 +421,7 @@ border: 2px solid var(--accent);
   width: 58px;
   height: 32px;
   margin-left:120px ;
-  filter: brightness(0.6);
+
 }
 
 .switch input { 
@@ -456,6 +456,7 @@ border: 2px solid var(--accent);
 
 input:checked + .slider {
   background-color: var(--accent);
+    filter: brightness(0.6);
 }
 
 input:focus + .slider {
