@@ -484,9 +484,10 @@ input:checked + .slider:before {
 }
 
 .settings .1set p {
-    margin-right: 10px; /* Adjust the value as needed */
+  
     margin: 0; /* Remove default margin for better alignment */
 }
+ 
 
 
 
