@@ -271,7 +271,7 @@ ul {
     padding: 10px;
 }
 
- li {
+.container > li {
     margin: 8px;
     padding-bottom: 10px;
     border-radius: 16px;
