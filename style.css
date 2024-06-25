@@ -480,6 +480,7 @@ input:checked + .slider:before {
 
 .1set {
   background: var(--srcbar);
+  border: none;
 }
 
 
