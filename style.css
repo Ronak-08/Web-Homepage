@@ -507,7 +507,9 @@ input:checked + .slider:before {
       line-height: 30px;
 }
  
-
+.settings {
+  background-color: black;
+}
 
 
 
