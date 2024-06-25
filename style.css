@@ -481,7 +481,7 @@ input:checked + .slider:before {
 
 .settings .1set {
     display: flex;
-    flex-direction: grid;
+    flex-direction: row;
     align-items: center;
 }
 
