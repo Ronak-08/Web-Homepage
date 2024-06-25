@@ -489,6 +489,7 @@ input:checked + .slider:before {
 
 .settings p {
     margin: 5px;
+    padding: 10px;
 }
  
 
