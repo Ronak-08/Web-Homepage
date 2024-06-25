@@ -503,6 +503,7 @@ input:checked + .slider:before {
       font-size: 17px;
       text-align: left;
       word-spacing:1.2px ;
+      line-height: 10px;
 }
  
 
