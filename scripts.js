@@ -216,7 +216,18 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
+document.addEventListener('DOMContentLoaded', function () {
+    var checkbox = document.getElementById('toggle');
+    var container = document.querySelector('.container');
 
+    checkbox.addEventListener('change', function() {
+        if (checkbox.checked) {
+            container.style.display = "none";
+        } else {
+            container.style.display = "flex";
+        }
+    });
+});
 
 
 
