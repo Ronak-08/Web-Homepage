@@ -507,6 +507,9 @@ input:checked + .slider:before {
 #colorPicker {
   margin-left: 70px;
 }
+.setList {
+  margin: 15px;
+}
 
 
 
