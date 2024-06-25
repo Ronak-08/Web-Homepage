@@ -478,8 +478,10 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
+
 .settings .1set {
     display: flex;
+    flex-direction: grid;
     align-items: center;
 }
 
