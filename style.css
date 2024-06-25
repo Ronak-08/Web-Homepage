@@ -415,7 +415,7 @@ border: 2px solid var(--accent);
   transition: 0.2s ease;
 }
 
-.switch {
+.settings .switch {
   position: relative;
   display: inline-block;
   width: 58px;
