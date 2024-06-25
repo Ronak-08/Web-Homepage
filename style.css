@@ -502,6 +502,7 @@ input:checked + .slider:before {
       border-radius: 18px;
       font-size: 17px;
       text-align: left;
+      word-spacing:1.2px ;
 }
  
 
