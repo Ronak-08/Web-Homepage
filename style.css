@@ -504,6 +504,9 @@ input:checked + .slider:before {
   background-color: black;
 }
 
+#colorPicker {
+  margin-left: 130px;
+}
 
 
 
