@@ -481,7 +481,7 @@ input:checked + .slider:before {
 .settings > h2 {
   text-align: center;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 28px;
   margin: 15px;
 }
 
