@@ -481,14 +481,13 @@ input:checked + .slider:before {
 
 
 .settings .1set {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: auto auto;
     align-items: center;
-    justify-content: center;
+    gap: 10px; /* Adjust the gap value as needed */
 }
 
-.settings .1set p {
-  
+.settings p {
     margin: 0; /* Remove default margin for better alignment */
 }
  
