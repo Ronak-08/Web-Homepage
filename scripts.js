@@ -220,12 +220,25 @@ document.addEventListener('DOMContentLoaded', function () {
     var checkbox = document.getElementById('toggle');
     var container = document.querySelector('.container');
 
-    checkbox.addEventListener('change', function() {
-        if (checkbox.checked) {
+    // Check localStorage for saved state
+    var isChecked = localStorage.getItem('newsDisabled') === 'true';
+    checkbox.checked = isChecked;
+    updateContainerVisibility(isChecked);
+
+    // Function to update container visibility based on checkbox state
+    function updateContainerVisibility(disabled) {
+        if (disabled) {
             container.style.display = "none";
         } else {
             container.style.display = "flex";
         }
+    }
+
+    // Event listener for checkbox change
+    checkbox.addEventListener('change', function() {
+        var isChecked = checkbox.checked;
+        localStorage.setItem('newsDisabled', isChecked); // Save state to localStorage
+        updateContainerVisibility(isChecked);
     });
 });
 
