@@ -500,7 +500,8 @@ input:checked + .slider:before {
     padding: 10px;
       background: var(--srcbar);
       border-radius: 18px;
-      font-size: 17px;
+      font-size: 15px;
+      font-weight: 600;
       text-align: left;
       word-spacing:1.2px ;
       line-height: 30px;
