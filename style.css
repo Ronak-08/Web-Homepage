@@ -497,7 +497,7 @@ input:checked + .slider:before {
 
 .settings p {
   margin: 10px;
-    padding: 14px;
+    padding: 10px;
       background: var(--srcbar);
       border-radius: 18px;
       font-size: 17px;
