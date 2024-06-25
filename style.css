@@ -450,8 +450,8 @@ margin-left: 130px;
   left: 3px;
   bottom: 3px;
   background-color: black;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 input:checked + .slider {
