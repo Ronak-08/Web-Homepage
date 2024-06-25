@@ -481,8 +481,13 @@ input:checked + .slider:before {
 .1set {
   background: var(--srcbar);
   border: none;
+  padding: 5px;
 }
-
+.settings {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
 
 
 @media screen and (min-width:992px) {
