@@ -483,6 +483,7 @@ input:checked + .slider:before {
   font-weight: 700;
   font-size: 28px;
   margin: 15px;
+  padding: 15px;
 }
 
 .settings .1set {
