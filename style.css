@@ -124,6 +124,7 @@ margin: 10px;
      background-color: #464646;
      color: var(--accent);
     height: 30px;
+    align-items: center;
 }
 
 
