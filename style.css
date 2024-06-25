@@ -502,6 +502,7 @@ input:checked + .slider:before {
  
 .settings {
   background-color: black;
+  border-radius: 16px;
 }
 
 #colorPicker {
