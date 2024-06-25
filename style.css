@@ -478,7 +478,9 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
-
+.settings > h2 {
+  text-align: center;
+}
 
 .settings .1set {
     display: grid;
