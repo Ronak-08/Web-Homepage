@@ -509,6 +509,8 @@ input:checked + .slider:before {
 }
 
 .settings > li {
+  margin-bottom: 16px;
+}
 
 
 @media screen and (min-width:992px) {
