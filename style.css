@@ -538,11 +538,11 @@ table.gsc-search-box {
     padding: 6px 0 !important;
 }
 #gsc-i-id1 {
-    color: #000 !important;
+    color: white !important;
     text-indent: 0 !important;
     font-size: 14px !important;
     line-height: 1 !important;
-    background: none !important;
+    background: black !important;
 }
 
 
