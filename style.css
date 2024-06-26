@@ -629,6 +629,8 @@ li {
   margin: 3vh;
 }
 .city > button {
+  background-color:#00000000;
+  color: var(--accent);
   font-size: 18px;
   padding: 10px;
   margin: 10px;
