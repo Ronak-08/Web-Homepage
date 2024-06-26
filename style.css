@@ -92,7 +92,7 @@ margin: 10px;
 
   .popup {
     display: none;
-    position: fixed;
+    position: absolute;
     top: 350px;
   flex-wrap: wrap;
     background-color: rgb(16 20 15);
