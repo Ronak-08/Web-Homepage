@@ -529,6 +529,7 @@ table.gsc-search-box {
 .gcse-search-box {
     border: 0 !important;
     background: #000000 !important;
+    border-radius: 16px;
 }
 .gcse-search-box-tools .gcse-search-box .gcse-input {
     padding-right: 0 !important;
