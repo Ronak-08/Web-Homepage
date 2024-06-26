@@ -514,36 +514,6 @@ input:checked + .slider:before {
   margin-bottom: 26px;
 }
 
-.gsc-control-cse {
-    background-color: #00000000 !important;
-    border: 0 !important;
-    padding: 6px 8px 6px 10px !important;
-    margin: 0px;
-    border-radius: 10px;
-    overflow: hidden;
-}
-form.gsc-search-box,
-table.gsc-search-box {
-    margin-bottom: 0 !important;
-}
-.gcse-search-box {
-    border: 0 !important;
-    background: #000000 !important;
-    border-radius: 16px;
-}
-.gcse-search-box-tools .gcse-search-box .gcse-input {
-    padding-right: 0 !important;
-}
-#gs_tti50 {
-    padding: 6px 0 !important;
-}
-#gsc-i-id1 {
-    color: #000 !important;
-    text-indent: 0 !important;
-    font-size: 14px !important;
-    line-height: 1 !important;
-    background: none !important;
-}
 
 
 
