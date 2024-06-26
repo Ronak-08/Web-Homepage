@@ -242,7 +242,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 window.addEventListener('scroll', function() {
         var searchBar = document.querySelector('.search-bar');
-        var searchContainer = document.querySelector('.search');
+        var searchContainer = document.getElementById('searchContainer');
         var offset = searchContainer.offsetTop;
 
         if (window.pageYOffset > offset) {
