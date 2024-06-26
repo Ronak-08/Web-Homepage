@@ -242,7 +242,7 @@ document.addEventListener('DOMContentLoaded', function () {
 window.addEventListener('scroll', function() {
         var searchContainer = document.getElementById('searchContainer');
 
-        if (window.pageYOffset > 330) { // Adjust the value if needed
+        if (window.pageYOffset > 310) { // Adjust the value if needed
             searchContainer.classList.add('sticky');
         } else {
             searchContainer.classList.remove('sticky');
