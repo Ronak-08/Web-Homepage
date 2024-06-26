@@ -43,7 +43,17 @@ body {
   transition: all 0.3s ease ;
 }
 
+   .search.sticky {
+            padding: 5px 0; /* Adjust if necessary to keep the padding uniform */
+        }
 
+        .search.sticky .search-bar {
+            width: 300px; /* New width */
+            height: 30px; /* New height */
+            border-radius: 16pc; /* New border radius */
+        }
+        
+        
 
 #city-input {
  font-weight: 400;
