@@ -48,8 +48,8 @@ body {
         }
 
         .search.sticky .search-bar {
-            width: 300px; /* New width */
-            height: 34px; /* New height */
+            width: 310px; /* New width */
+            height: 36px; /* New height */
             border-radius: 16pc; /* New border radius */
         }
         
