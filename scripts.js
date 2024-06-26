@@ -245,7 +245,7 @@ window.addEventListener('scroll', function() {
         if (window.pageYOffset > 310) { // Adjust the value if needed
             searchContainer.classList.add('sticky');
             
-            
+            searchBar.style.backdropFilter = 'blur(8px)';
             
         } else {
             searchContainer.classList.remove('sticky');
