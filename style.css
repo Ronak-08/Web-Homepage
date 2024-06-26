@@ -39,14 +39,16 @@ body {
   align-items: center;
   width: 100%;
 }
-
   .fixed {
             position: fixed;
             top: 0;
+            left: 50%;
+            transform: translateX(-50%);
             width: 330px; /* New width */
             height: 30px; /* New height */
             border-radius: 16pc; /* New border radius */
         }
+
 
 #city-input {
  font-weight: 400;
