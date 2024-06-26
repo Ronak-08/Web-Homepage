@@ -93,7 +93,9 @@ margin: 10px;
   .popup {
     display: none;
     position: absolute;
-    top: 350px;
+    top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center the popup */
   flex-wrap: wrap;
     background-color: rgb(16 20 15);
     padding: 24px;
@@ -106,6 +108,7 @@ margin: 10px;
    max-width: 100%;
    transition: 0.2s ease;
  width: 100%;
+ margin: 10px;
  
   }
 
