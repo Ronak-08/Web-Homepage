@@ -45,7 +45,7 @@ body {
             top: 0;
             width: 330px; /* New width */
             height: 30px; /* New height */
-            border-radius: 15px; /* New border radius */
+            border-radius: 32pc; /* New border radius */
         }
 
 #city-input {
