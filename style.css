@@ -105,7 +105,7 @@ margin: 10px;
    max-width: 100%;
    transition: 0.2s ease;
  width: 100%;
-    border: 1.6px solid rgb(140 147 136);
+  margin: 10px;
   }
 
 #newName {
@@ -641,14 +641,7 @@ li {
   padding: 10px;
   font-size: 20px;
 }
-.popup {
-  max-width: 40%;
-position: absolute;
-left: 30%;
-margin: 10px;
-border: none;
-padding: 10px;
-}
+
 
 
 
