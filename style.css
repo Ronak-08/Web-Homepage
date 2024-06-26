@@ -519,7 +519,7 @@ input:checked + .slider:before {
     border: 0 !important;
     padding: 6px 8px 6px 10px !important;
     margin: 0px;
-    border-radius: 2px;
+    border-radius: 10px;
     overflow: hidden;
 }
 form.gsc-search-box,
