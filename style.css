@@ -514,6 +514,31 @@ input:checked + .slider:before {
   margin-bottom: 26px;
 }
 
+.gcse-searchbox-only {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        input.gsc-input {
+            height: 40px;
+            border: 1px solid #ccc;
+            border-radius: 20px 0 0 20px;
+            padding: 0 15px;
+            font-size: 16px;
+            box-shadow: none;
+        }
+
+        .gsc-search-button input.gsc-search-button-v2 {
+            height: 40px;
+            border: none;
+            border-radius: 0 20px 20px 0;
+            background-color: #333;
+            color: #fff;
+            padding: 0 20px;
+        }
+
+
+
 
 @media screen and (min-width:992px) {
 .search{
