@@ -38,9 +38,15 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
-
-
 }
+
+  .fixed {
+            position: fixed;
+            top: 0;
+            width: 600px; /* New width */
+            height: 30px; /* New height */
+            border-radius: 15px; /* New border radius */
+        }
 
 #city-input {
  font-weight: 400;
