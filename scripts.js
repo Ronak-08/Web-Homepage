@@ -244,6 +244,9 @@ window.addEventListener('scroll', function() {
 
         if (window.pageYOffset > 310) { // Adjust the value if needed
             searchContainer.classList.add('sticky');
+            
+            
+            
         } else {
             searchContainer.classList.remove('sticky');
         }
