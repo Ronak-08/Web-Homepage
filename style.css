@@ -43,7 +43,7 @@ body {
   .fixed {
             position: fixed;
             top: 0;
-            width: 600px; /* New width */
+            width: 330px; /* New width */
             height: 30px; /* New height */
             border-radius: 15px; /* New border radius */
         }
