@@ -159,7 +159,7 @@ input {
 
 
 .search-bar {
-backdrop-filter: blur(100px);
+backdrop-filter: blur(10px);
   color: var(--text);
   padding: 16px;
 border: none;
