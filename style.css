@@ -517,6 +517,7 @@ input:checked + .slider:before {
 .gcse-searchbox-only {
             max-width: 600px;
             margin: 0 auto;
+            background-color: black;
         }
 
         input.gsc-input {
