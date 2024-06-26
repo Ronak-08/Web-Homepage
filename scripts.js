@@ -240,16 +240,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-window.addEventListener('scroll', function() {
-        var searchBar = document.querySelector('.search-bar');
-        var searchContainer = document.getElementById('searchContainer');
-        var offset = searchContainer.offsetTop;
 
-        if (window.pageYOffset > offset) {
-            searchBar.classList.add('fixed');
-        } else {
-            searchBar.classList.remove('fixed');
-        }
-    });
 
 
