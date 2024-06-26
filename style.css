@@ -515,7 +515,7 @@ input:checked + .slider:before {
 }
 
 .gsc-control-cse {
-    background-color: #000000 !important;
+    background-color: #00000000 !important;
     border: 0 !important;
     padding: 6px 8px 6px 10px !important;
     margin: 0px;
