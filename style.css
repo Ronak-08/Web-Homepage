@@ -508,7 +508,7 @@ input:checked + .slider:before {
 .settings p {
   margin: 10px;
     padding: 10px;
-      background: var(--srcbar);
+   
       border-radius: 18px;
       font-size: 15px;
       font-weight: 600;
@@ -528,6 +528,7 @@ input:checked + .slider:before {
 
 .settings > .setList > li {
   margin-bottom: 26px;
+     background: var(--srcbar);
 }
 
 
