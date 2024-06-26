@@ -157,7 +157,7 @@ input {
   padding: 16px;
 border: none;
   border-radius: 16pc;
-
+transition: all 0.3s ease;
   width: 320px;
   height: 58px;
   margin-top: 15px;
