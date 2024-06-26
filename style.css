@@ -528,7 +528,7 @@ table.gsc-search-box {
 }
 .gcse-search-box {
     border: 0 !important;
-    background: none !important;
+    background: #00000000 !important;
 }
 .gcse-search-box-tools .gcse-search-box .gcse-input {
     padding-right: 0 !important;
