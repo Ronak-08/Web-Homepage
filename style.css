@@ -146,7 +146,7 @@ input {
 
 
 .search-bar {
-  position: sticky;
+  position: fixed;
   color: var(--text);
   padding: 16px;
 border: none;
