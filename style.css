@@ -164,7 +164,7 @@ transition: all 0.3s ease;
   background-color: var(--srcbar);
   font-size: 14px;
   font-weight: 600;
-  transition: 0.2s ease;
+ 
   word-spacing: -1px;
 }
 
