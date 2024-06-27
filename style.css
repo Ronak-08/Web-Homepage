@@ -533,9 +533,6 @@ input:checked + .slider:before {
   margin-top: 40px;
   background-color: black;
   border-radius: 22px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
 #colorPicker {
