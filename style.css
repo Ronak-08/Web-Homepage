@@ -507,7 +507,7 @@ input:checked + .slider:before {
   padding: 15px;
 }
 
-.settings .1set {
+.settings > .1set {
   display: flex;
   justify-content: space-between;
     align-items: center;
