@@ -411,9 +411,7 @@ box-shadow: 2px 1px 10px white;
 #temperature {
  font-size: 40px;
  font-weight: 600;
-
-
-
+ margin: 6px;
 }
 
 #description {
