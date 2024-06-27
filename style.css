@@ -388,6 +388,7 @@ color: black;
   justify-content: center;
   align-items: center;
   flex-direction: row;
+  margin-bottom: 2vh;
 }
 
 .weather {
