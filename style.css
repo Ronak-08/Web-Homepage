@@ -425,7 +425,7 @@ box-shadow: 2px 1px 10px white;
 }
 
 #city-name {
-  font-size: 14px;
+ text-align: right;
  margin-left: 50px;
  font-weight: 400;
   padding: 0px 5px 5px;
