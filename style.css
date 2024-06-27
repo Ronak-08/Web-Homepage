@@ -396,7 +396,7 @@ color: black;
  width: 50%;
  height: 70%;
 color: var(--accent);
-  border-radius: 16px;
+  border-radius: 24px;
   align-items: left;
   padding: 5px 5px 5px 15px;
   word-spacing: -2px;
