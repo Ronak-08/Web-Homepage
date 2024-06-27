@@ -81,7 +81,8 @@ margin-left: 10px;
   display: flex;
   padding: 10px;
   font-size: 50px;
-
+align-items: center;
+justify-content: center;
   color: var(--accent);
 text-align: center;
   z-index: 1;
