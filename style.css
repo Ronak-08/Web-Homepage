@@ -416,7 +416,7 @@ box-shadow: 2px 1px 10px white;
 
 #description {
   font-weight: 400;
-  
+  margin-top: 10px;
   padding: 0px 5px 10px;
   font-size: 14px;
   text-transform: capitalize;
