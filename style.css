@@ -392,7 +392,7 @@ color: black;
 .weather {
   display: flex;
   margin-top:2vh;
-  margin-bottom: 6vh;
+  margin-bottom: 2vh;
   flex-direction: column;
  width: 45%;
  height: 160px;
