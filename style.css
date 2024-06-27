@@ -425,7 +425,7 @@ box-shadow: 1px 1px 8px white;
 
 #city-name {
   font-size: 16px;
- 
+ margin-left: 30px;
  font-weight: 400;
   padding: 0px 5px 5px;
 }
