@@ -54,6 +54,10 @@ body {
         }
         
         
+        
+        .city {
+          justify-content: space-between;
+        }
 
 #city-input {
  font-weight: 400;
