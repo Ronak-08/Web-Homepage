@@ -86,7 +86,7 @@ justify-content: center;
   color: var(--accent);
 text-align: center;
   z-index: 1;
-  background-color: #4a4648;
+  background-color: rgb(49,49,49);
   border-radius: 28px;
  
   transition: 0.2s ease;
@@ -601,7 +601,7 @@ gap: 5rem;
   font-size: 90px;
   position: absolute;
   top: 70px;
-  background: rgb(49,49,49);
+  background: #025f5f00;
   font-weight: 700;
 
 }
