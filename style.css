@@ -401,7 +401,7 @@ color: var(--accent);
   padding: 5px 5px 5px 15px;
   word-spacing: -2px;
  transition: 0.2s ease;
-  background-color: rgb(49,49,49) );
+  background-color: rgb(49,49,49);
 }
 
 .weather:hover {
