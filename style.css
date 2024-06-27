@@ -69,9 +69,10 @@ body {
 .city > button {
   border-radius: 32px;
   border: none;
-  padding: 6px;
+  padding: 8px;
   transition: 0.2s ease;
   background: #00000000;
+  margin: 5px;
 }
 
 #timeElement{
