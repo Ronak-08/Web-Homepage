@@ -41,7 +41,7 @@ async function getWeather(cityName) {
 
   if (data.cod === 200) {
     const cityName = data.name;
-    const temperature = data.main.temp;
+    const temperature = Math.round(data.main.temp);
     const description = data.weather[0].description;
  
 
