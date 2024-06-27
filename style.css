@@ -410,14 +410,14 @@ box-shadow: 1px 1px 8px white;
 #temperature {
  font-size: 50px;
  font-weight: 600;
- color: white;
+
 
 
 }
 
 #description {
   font-weight: 400;
-    color: #616060e4;
+  
   padding: 0px 5px 10px;
   font-size: 14px;
   text-transform: capitalize;
@@ -425,7 +425,7 @@ box-shadow: 1px 1px 8px white;
 
 #city-name {
   font-size: 16px;
-  color: #616060e4;
+ 
  font-weight: 400;
   padding: 0px 5px 5px;
 }
