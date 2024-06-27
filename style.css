@@ -86,11 +86,12 @@ margin: 10px;
   position: relative;
   z-index: 1;
   background-color: #4a4648;
-  border-radius: 32px;
+  border-radius: 28px;
   cursor: pointer;
   transition: 0.3s ease;
   font-weight: 600;
-  
+  width: 45%;
+  height: 160px;
 }
 
 
