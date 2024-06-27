@@ -405,7 +405,7 @@ color: var(--accent);
 }
 
 .weather:hover {
-box-shadow: 2px 1px 10px white;
+box-shadow: 1px 1px 10px white;
 border: 1px solid rgb(93,93,93);
 }
 
