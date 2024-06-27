@@ -43,22 +43,20 @@ async function getWeather(cityName) {
     const cityName = data.name;
     const temperature = data.main.temp;
     const description = data.weather[0].description;
-    const minTemp = data.min.temp_min;
-    const maxTemp = data.max.temp_max;
+ 
 
-    updateWeatherInfo(cityName, temperature, description, minTemp, maxTemp);
+    updateWeatherInfo(cityName, temperature, description);
     localStorage.setItem('savedCity', cityName);  // Save city name to local storage
   } else {
     console.log('City not found. Please check the city name and try again.');
   }
 }
 
-function updateWeatherInfo(cityName, temperature, description, minTemp, maxTemp) {
+function updateWeatherInfo(cityName, temperature, description) {
   document.getElementById('city-name').textContent = cityName;
   document.getElementById('temperature').textContent = `${temperature}`;
   document.getElementById('description').textContent = description;
-  document.getElementById('min-temp').textContent = `${minTemp}`; // Update minimum temperature
-  document.getElementById('max-temp').textContent = `${maxTemp}`; // Update maximum temperature
+
 }
 
 function handleCitySearch() {
