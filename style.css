@@ -83,11 +83,11 @@ margin-left: 10px;
   font-size: 40px;
   text-align: center;
   color: var(--accent);
-  position: relative;
+
   z-index: 1;
   background-color: #4a4648;
   border-radius: 28px;
-  cursor: pointer;
+ 
   transition: 0.3s ease;
   font-weight: 600;
   width: 45%;
@@ -226,7 +226,7 @@ flex-wrap: wrap;
    font-size: 24px;
 }
 
-.icons > a:hover, #timeElement:hover {
+.icons > a:hover {
   transform: scale(1.1);
 }
 
@@ -405,7 +405,7 @@ color: var(--accent);
   background-color: rgb(49,49,49);
 }
 
-.weather:hover {
+.weather:hover , #timeElement:hover {
 box-shadow: 1px 1px 10px white;
 border: 1px solid rgb(93,93,93);
 }
