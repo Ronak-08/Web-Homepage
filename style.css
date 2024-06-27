@@ -434,6 +434,12 @@ border: 1px solid rgb(93,93,93);
   font-weight: 400;
 }
 
+.settings > .setList {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
 
 
 .settings .switch {
