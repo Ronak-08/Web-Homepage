@@ -77,7 +77,7 @@ body {
 }
 
 #timeElement{
-margin: 10px;
+margin-left: 10px;
   display: inline-block;
   padding: 10px 20px;
   font-size: 30px;
