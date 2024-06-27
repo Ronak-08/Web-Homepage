@@ -71,6 +71,7 @@ body {
   border: none;
   padding: 8px;
   transition: 0.2s ease;
+  color: var(--accent);
   background: #00000000;
   margin: 5px;
 }
