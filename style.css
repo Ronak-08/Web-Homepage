@@ -508,8 +508,8 @@ input:checked + .slider:before {
 }
 
 .settings .1set {
-    display: grid;
-    grid-template-columns: auto auto;
+  display: flex;
+  justify-content: space-between;
     align-items: center;
     gap: 10px; /* Adjust the gap value as needed */
     margin-top: 15px;
