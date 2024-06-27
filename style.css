@@ -598,7 +598,8 @@ gap: 5rem;
   border-radius: 20pc;
   font-size: 90px;
   position: absolute;
-  top: 70px;
+  width: 45%;
+  height: 170px;
   background: #025f5f00;
   font-weight: 700;
 
