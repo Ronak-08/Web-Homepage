@@ -83,7 +83,7 @@ margin-left: 10px;
   font-size: 50px;
 
   color: var(--accent);
-align-items: center;
+text-align: center;
   z-index: 1;
   background-color: #4a4648;
   border-radius: 28px;
