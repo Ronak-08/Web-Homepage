@@ -522,7 +522,7 @@ input:checked + .slider:before {
 }
  
 .settings {
-  margin-top: 2vh;
+  margin-top: 30px;
   background-color: black;
   border-radius: 16px;
 }
