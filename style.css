@@ -400,7 +400,7 @@ color: black;
   padding: 5px 5px 5px 15px;
   word-spacing: -2px;
  transition: 0.2s ease;
-  background: linear-gradient(45deg, #13a9f8e4,#75c6fce4,#fee6b3e4 );
+  background: black );
 }
 
 .weather:hover {
