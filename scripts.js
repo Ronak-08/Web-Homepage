@@ -54,10 +54,12 @@ async function getWeather(cityName) {
   }
 }
 
-function updateWeatherInfo(cityName, temperature, description) {
+function updateWeatherInfo(cityName, temperature, description, icon) {
   document.getElementById('city-name').textContent = cityName;
   document.getElementById('temperature').textContent = `${temperature}°`;
   document.getElementById('description').textContent = description;
+const iconUrl = `https://openweathermap.org/img/wn/${icon}@2x.png`;
+  document.getElementById('weather-icon').src = iconUrl;
 
 }
 
