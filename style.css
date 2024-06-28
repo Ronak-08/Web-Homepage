@@ -547,7 +547,7 @@ input:checked + .slider:before {
 
 
 .settings > .setList > li {
-  margin-bottom: 26px;
+  margin: 10px 10px 26px 10px;
      background: var(--srcbar);
       border-radius: 18px;
 }
