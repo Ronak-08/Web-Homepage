@@ -55,11 +55,7 @@ body {
         
         
         
-        .city {
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-        }
+ 
 
 #city-input {
  font-weight: 400;
