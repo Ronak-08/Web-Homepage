@@ -108,8 +108,10 @@ text-align: center;
 
   .popup {
     display: none;
-    position: absolute;
-    top: 350px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   flex-wrap: wrap;
     background-color: rgb(16 20 15);
     padding: 24px;
