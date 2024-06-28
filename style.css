@@ -692,7 +692,9 @@ li {
 .settings {
 margin:4rem;
 }
-
+.settings > p {
+  font-size: 20px;
+}
 
 
 
