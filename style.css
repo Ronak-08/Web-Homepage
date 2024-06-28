@@ -625,6 +625,16 @@ gap: 5rem;
 
 }
 
+.time {
+  background: #5c626200;
+  top: 60px;
+  margin: 0px;
+}
+
+#currentDay {
+  position: absolute;
+}
+
 
 .container {
   max-width: 70%;
