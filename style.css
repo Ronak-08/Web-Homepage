@@ -108,8 +108,8 @@ text-align: center;
 
   .popup {
     display: none;
-    position: fixed;
-    top: 30%;
+    position: absolute;
+    top: 350px;
    
   flex-wrap: wrap;
     background-color: rgb(16 20 15);
