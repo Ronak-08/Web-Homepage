@@ -518,7 +518,7 @@ input:checked + .slider:before {
   
 }
 
-.wrap {
+.wrap , .city{
   display: flex;
   justify-content: space-between;
   align-items: center;
