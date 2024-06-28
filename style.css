@@ -80,20 +80,16 @@ body {
 }
 
 #timeElement{
-
-  
   padding: 10px;
   font-size: 50px;
-
-
-  
 text-align: center;
-
-  
- 
   transition: 0.2s ease;
   font-weight: 600;
 
+}
+
+#currentDay {
+  font-size: 13px;
 }
 
 .time {
