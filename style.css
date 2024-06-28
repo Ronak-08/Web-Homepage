@@ -517,9 +517,9 @@ input:checked + .slider:before {
 
 .settings > .1set {
   display: flex;
-  justify-content: space-between;
+ 
     align-items: center;
-    gap: 10px; /* Adjust the gap value as needed */
+  
     margin-top: 15px;
     padding: 20px;
   
