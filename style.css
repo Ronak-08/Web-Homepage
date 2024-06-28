@@ -563,7 +563,11 @@ input:checked + .slider:before {
    padding: 25px;
 }
 
-
+        .search.sticky .search-bar {
+            width: 610px; /* New width */
+            height: 56px; /* New height */
+            border-radius: 16pc; /* New border radius */
+        }
 
 
 .weather{
