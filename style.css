@@ -608,7 +608,8 @@ right: 100px;
 }
 
 #weather-icon {
-  padding-right: 7px;
+  margin: 10px;
+  padding: 10px;
 }
 .wrapper {
   flex-direction: row;
