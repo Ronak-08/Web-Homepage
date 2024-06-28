@@ -86,7 +86,7 @@ margin-left: 10px;
   font-size: 50px;
 
 
-  color: var(--accent);
+  
 text-align: center;
 
   
@@ -104,6 +104,7 @@ text-align: center;
   flex-direction: column;
   background-color: rgb(49,49,49);
   border-radius: 28px;
+  color: var(--accent);
 }
 
 
