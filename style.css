@@ -76,6 +76,7 @@ body {
   color: var(--accent);
   background: #00000000;
   margin: 5px 5px 5px 15px;
+  flex-shrink: 0;
 }
 
 #timeElement{
