@@ -540,7 +540,7 @@ input:checked + .slider:before {
 }
  
 .settings {
-  margin-top: 40px;
+  margin: 40px 14px;
   background-color: black;
   border-radius: 22px;
 }
