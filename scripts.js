@@ -54,7 +54,7 @@ async function getWeather(cityName) {
   }
 }
 
-function updateWeatherInfo(cityName, temperature, description, icon) {
+function updateWeatherInfo(cityName, temperature, description, icon ,minTemp, maxTemp) {
   document.getElementById('city-name').textContent = cityName;
   document.getElementById('temperature').textContent = `${temperature}°`;
   document.getElementById('description').textContent = description;
