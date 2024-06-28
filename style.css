@@ -546,9 +546,6 @@ input:checked + .slider:before {
   border-radius: 22px;
 }
 
-#colorPicker {
-  margin-left: 70px;
-}
 
 .settings > .setList > li {
   margin-bottom: 26px;
