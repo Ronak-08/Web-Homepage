@@ -80,7 +80,7 @@ body {
 }
 
 #timeElement{
-margin-left: 10px;
+
   
   padding: 10px;
   font-size: 50px;
@@ -106,6 +106,7 @@ text-align: center;
   color: var(--accent);
   width: 45%;
   height: 160px;
+  margin-left: 10px;
 }
 
 
