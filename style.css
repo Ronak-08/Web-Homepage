@@ -634,6 +634,8 @@ gap: 5rem;
 #currentDay {
   position: absolute;
   top: 60px;
+  font-size: 30px;
+  font-weight: 500;
 }
 
 
