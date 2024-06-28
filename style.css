@@ -516,10 +516,6 @@ input:checked + .slider:before {
 }
 
 .settings > .1set {
-  display: flex;
- 
-    align-items: center;
-  
     margin-top: 15px;
     padding: 20px;
   
@@ -528,7 +524,7 @@ input:checked + .slider:before {
 .wrap {
   display: flex;
   justify-content: space-between;
-  position: relative;
+ 
 }
 
 .settings p {
