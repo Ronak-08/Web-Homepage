@@ -44,27 +44,22 @@ async function getWeather(cityName) {
     const temperature = Math.round(data.main.temp);
     const description = data.weather[0].description;
     const icon = data.weather[0].icon;
-const minTemp = data.main.temp_min;
-    const maxTemp = data.main.temp_max;
 
  
 
-    updateWeatherInfo(cityName, temperature, description, icon, minTemp, maxTemp);
+    updateWeatherInfo(cityName, temperature, description, icon);
     localStorage.setItem('savedCity', cityName);  // Save city name to local storage
   } else {
     console.log('City not found. Please check the city name and try again.');
   }
 }
 
-function updateWeatherInfo(cityName, temperature, description, icon ,minTemp, maxTemp) {
+function updateWeatherInfo(cityName, temperature, description, icon) {
   document.getElementById('city-name').textContent = cityName;
   document.getElementById('temperature').textContent = `${temperature}°`;
   document.getElementById('description').textContent = description;
 const iconUrl = `https://openweathermap.org/img/wn/${icon}@2x.png`;
   document.getElementById('weather-icon').src = iconUrl;
-  document.getElementById('min-temp').textContent = `Min: ${Math.round(minTemp)}°`;
-  document.getElementById('max-temp').textContent = `Max: ${Math.round(maxTemp)}°`;
-
 
 }
 
