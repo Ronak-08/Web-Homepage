@@ -531,8 +531,7 @@ input:checked + .slider:before {
 .settings p {
   margin: 10px;
     padding: 10px;
-   justify-content: space-between;
-      border-radius: 18px;
+  
       font-size: 15px;
       font-weight: 600;
       text-align: left;
