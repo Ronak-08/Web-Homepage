@@ -80,7 +80,7 @@ body {
 }
 
 #timeElement{
-  padding: 10px;
+  padding: 6px;
   font-size: 50px;
 text-align: center;
   transition: 0.2s ease;
