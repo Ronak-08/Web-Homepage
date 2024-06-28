@@ -693,9 +693,7 @@ li {
 margin:4rem;
 }
 
-.settings > li {
-  font-size: 25px;
-}
+
 
 
 @media only screen and (min-width: 768px) {
