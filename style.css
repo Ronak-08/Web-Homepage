@@ -664,6 +664,7 @@ li {
 
 .settings {
   max-width: 80%;
+  justify-content: center;
 }
 
 
