@@ -646,9 +646,7 @@ li {
 .hello > button {
   font-weight: 400;
 }
-.city  {
-  margin: 3vh;
-}
+
 .city > button {
   background-color:#00000000;
   color: var(--accent);
