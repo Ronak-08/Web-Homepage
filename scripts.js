@@ -270,38 +270,30 @@ window.addEventListener('scroll', function() {
         }
     });
 
-
-
 function addLink() {
     // Get the URL and link text from the input fields
     const url = document.getElementById('urlInput').value;
     const linkText = document.getElementById('linkText').value;
 
+    // Fetch favicon using a third-party service
+    const faviconUrl = `https://www.google.com/s2/favicons?domain=${url}`;
+
     // Create a new anchor element
     const link = document.createElement('a');
     link.href = url;
     link.target = '_blank'; // Open link in a new tab
-    link.innerHTML = `<i class="fa-solid">${linkText}</i>`; // Assuming you want to use an icon here
+    link.innerHTML = `<img src="${faviconUrl}" alt="icon"> ${linkText}`;
 
-    // Create a delete button
-    const deleteButton = document.createElement('button');
-    deleteButton.textContent = 'Delete';
-    deleteButton.onclick = function() {
-        deleteLink(url);
-    };
-
-    // Create a container for the link and delete button
-    const linkContainer = document.createElement('div');
-    linkContainer.appendChild(link);
-    linkContainer.appendChild(deleteButton);
-
-    // Append the link container to the icons container
-    document.getElementById('iconsContainer').appendChild(linkContainer);
+    // Append the link to the icons container
+    document.getElementById('iconsContainer').appendChild(link);
 
     // Save to local storage
     const links = JSON.parse(localStorage.getItem('links')) || [];
     links.push({ url: url, text: linkText });
     localStorage.setItem('links', JSON.stringify(links));
+
+    // Add link to the management section
+    addLinkToManagementSection(url, linkText);
 
     // Clear the input fields
     document.getElementById('urlInput').value = '';
@@ -313,45 +305,68 @@ function loadLinks() {
     const iconsContainer = document.getElementById('iconsContainer');
 
     links.forEach(linkData => {
+        // Fetch favicon using a third-party service
+        const faviconUrl = `https://www.google.com/s2/favicons?domain=${linkData.url}`;
+
         const link = document.createElement('a');
         link.href = linkData.url;
         link.target = '_blank';
-        link.innerHTML = `<i class="fa-solid">${linkData.text}</i>`;
+        link.innerHTML = `<img src="${faviconUrl}" alt="icon"> ${linkData.text}`;
+        iconsContainer.appendChild(link);
 
-        // Create a delete button
-        const deleteButton = document.createElement('button');
-        deleteButton.textContent = 'Delete';
-        deleteButton.onclick = function() {
-            deleteLink(linkData.url);
-        };
-
-        // Create a container for the link and delete button
-        const linkContainer = document.createElement('div');
-        linkContainer.appendChild(link);
-        linkContainer.appendChild(deleteButton);
-
-        // Append the link container to the icons container
-        iconsContainer.appendChild(linkContainer);
+        // Add link to the management section
+        addLinkToManagementSection(linkData.url, linkData.text);
     });
 }
 
-function deleteLink(url) {
-    // Remove the link container from the DOM
-    const iconsContainer = document.getElementById('iconsContainer');
-    const linkContainers = iconsContainer.getElementsByTagName('div');
+function addLinkToManagementSection(url, text) {
+    const managementContainer = document.getElementById('managementContainer');
 
-    for (let i = 0; i < linkContainers.length; i++) {
-        const link = linkContainers[i].getElementsByTagName('a')[0];
-        if (link && link.href === url) {
-            iconsContainer.removeChild(linkContainers[i]);
+    // Create a new item for the management section
+    const item = document.createElement('div');
+    item.textContent = text;
+
+    // Create a delete button
+    const deleteButton = document.createElement('button');
+    deleteButton.textContent = 'Delete';
+    deleteButton.onclick = function() {
+        deleteLink(url);
+    };
+
+    // Append the delete button to the item
+    item.appendChild(deleteButton);
+
+    // Append the item to the management container
+    managementContainer.appendChild(item);
+}
+
+function deleteLink(url) {
+    // Remove the link from the DOM
+    const iconsContainer = document.getElementById('iconsContainer');
+    const links = iconsContainer.getElementsByTagName('a');
+
+    for (let i = 0; i < links.length; i++) {
+        if (links[i].href === url) {
+            iconsContainer.removeChild(links[i]);
+            break;
+        }
+    }
+
+    // Remove the management item from the DOM
+    const managementContainer = document.getElementById('managementContainer');
+    const items = managementContainer.getElementsByTagName('div');
+
+    for (let i = 0; i < items.length; i++) {
+        if (items[i].textContent.replace('Delete', '').trim() === url) {
+            managementContainer.removeChild(items[i]);
             break;
         }
     }
 
     // Remove the link from local storage
-    let links = JSON.parse(localStorage.getItem('links')) || [];
-    links = links.filter(linkData => linkData.url !== url);
-    localStorage.setItem('links', JSON.stringify(links));
+    let storedLinks = JSON.parse(localStorage.getItem('links')) || [];
+    storedLinks = storedLinks.filter(linkData => linkData.url !== url);
+    localStorage.setItem('links', JSON.stringify(storedLinks));
 }
 
 // Load links from local storage when the page loads
