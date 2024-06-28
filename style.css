@@ -93,8 +93,7 @@ text-align: center;
  
   transition: 0.2s ease;
   font-weight: 600;
-  width: 45%;
-  height: 160px;
+
 }
 
 .time {
@@ -105,6 +104,8 @@ text-align: center;
   background-color: rgb(49,49,49);
   border-radius: 28px;
   color: var(--accent);
+  width: 45%;
+  height: 160px;
 }
 
 
