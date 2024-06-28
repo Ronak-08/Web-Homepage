@@ -664,8 +664,9 @@ li {
 
 .settings {
   width: 80%;
-  justify-content: center;
-  align-items: center;
+display: flex;
+justify-content: center;
+align-items: center;
 }
 
 
