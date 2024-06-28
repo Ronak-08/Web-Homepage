@@ -44,10 +44,12 @@ async function getWeather(cityName) {
     const temperature = Math.round(data.main.temp);
     const description = data.weather[0].description;
     const icon = data.weather[0].icon;
+const minTemp = data.main.temp_min;
+    const maxTemp = data.main.temp_max;
 
  
 
-    updateWeatherInfo(cityName, temperature, description, icon);
+    updateWeatherInfo(cityName, temperature, description, icon, minTemp, maxTemp);
     localStorage.setItem('savedCity', cityName);  // Save city name to local storage
   } else {
     console.log('City not found. Please check the city name and try again.');
