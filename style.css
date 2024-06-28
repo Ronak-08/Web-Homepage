@@ -606,6 +606,10 @@ right: 100px;
   font-size: 18px;
   font-weight: 600;
 }
+
+#weather-icon {
+  margin: 5px;
+}
 .wrapper {
   flex-direction: row;
 
