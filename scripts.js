@@ -31,8 +31,7 @@ updateTime();
 	
 
 
-
-const apiKey = 'db5a5dd4233284f22f468c35dad5f8ff';
+const apiKey = '';
 
 async function getWeather(cityName) {
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apiKey}&units=metric`;
@@ -43,20 +42,35 @@ async function getWeather(cityName) {
     const cityName = data.name;
     const temperature = Math.round(data.main.temp);
     const description = data.weather[0].description;
- 
 
-    updateWeatherInfo(cityName, temperature, description);
+    // Get suitable icon for weather
+    const now = new Date();
+    const date = new Date(now.getTime() + now.getTimezoneOffset() * 60000);
+    const millisecondsOffsetUTC = date.getTime() + data.timezone * 1000;
+    const localTime = new Date(millisecondsOffsetUTC);
+    const sunrise = new Date(data.sys.sunrise * 1000);
+    const sunset = new Date(data.sys.sunset * 1000);
+
+    // Get correct weather icon for day/night periods
+    let weatherIconID;
+    if (localTime > sunrise && localTime < sunset) {
+      weatherIconID = `wi wi-owm-day-${data.weather[0].id}`;
+    } else {
+      weatherIconID = `wi wi-owm-night-${data.weather[0].id}`;
+    }
+
+    updateWeatherInfo(cityName, temperature, description, weatherIconID);
     localStorage.setItem('savedCity', cityName);  // Save city name to local storage
   } else {
     console.log('City not found. Please check the city name and try again.');
   }
 }
 
-function updateWeatherInfo(cityName, temperature, description) {
+function updateWeatherInfo(cityName, temperature, description, weatherIconID) {
   document.getElementById('city-name').textContent = cityName;
   document.getElementById('temperature').textContent = `${temperature}°`;
   document.getElementById('description').textContent = description;
-
+  document.getElementById('weather-icon').className = weatherIconID; // Update weather icon class
 }
 
 function handleCitySearch() {
@@ -73,6 +87,7 @@ document.addEventListener('DOMContentLoaded', () => {
     getWeather(savedCity);
   }
 });
+
 
 
 
