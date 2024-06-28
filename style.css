@@ -384,6 +384,12 @@ color: black;
   margin-bottom: 2vh;
 }
 
+.weather > #weather-icon {
+  width: 20px;
+  height: 20px;
+  
+}
+
 .weather {
   display: flex;
   margin-top:2vh;
