@@ -608,7 +608,7 @@ right: 100px;
 }
 
 #weather-icon {
-  padding: 5px;
+  padding-right: 7px;
 }
 .wrapper {
   flex-direction: row;
