@@ -28,6 +28,18 @@ setInterval(updateTime, 1000);
 updateTime();
 
 	
+	const days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+        const today = new Date();
+        const dayOfWeek = days[today.getDay()];
+        const dateOfMonth = today.getDate();
+
+        // Format the output as "Sun 21"
+        const formattedDate = `${dayOfWeek} ${dateOfMonth}`;
+
+        // Update the HTML element with id="currentDay"
+        document.getElementById('currentDay').textContent = formattedDate;
+        
+        
 	
 
 
