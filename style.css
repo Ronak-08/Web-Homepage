@@ -595,7 +595,7 @@ right: 100px;
 }
 #city-name{
   padding: 0;
-  margin: 0;
+  margin-right: 6px;
 }
 .wrapper {
   flex-direction: row;
