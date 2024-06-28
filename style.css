@@ -539,6 +539,10 @@ input:checked + .slider:before {
       word-spacing:1.2px ;
       line-height: 30px;
 }
+
+#colorPicker {
+  padding-right: 5px;
+}
  
 .settings {
   margin: 40px 5px;
