@@ -387,7 +387,7 @@ color: black;
 .weather > #weather-icon {
   width: 40px;
   height: 40px;
-  position: relative;
+  position: absolute;
 }
 
 .weather {
