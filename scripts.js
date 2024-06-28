@@ -60,6 +60,9 @@ function updateWeatherInfo(cityName, temperature, description, icon) {
   document.getElementById('description').textContent = description;
 const iconUrl = `https://openweathermap.org/img/wn/${icon}@2x.png`;
   document.getElementById('weather-icon').src = iconUrl;
+  document.getElementById('min-temp').textContent = `Min: ${Math.round(minTemp)}°`;
+  document.getElementById('max-temp').textContent = `Max: ${Math.round(maxTemp)}°`;
+
 
 }
 
