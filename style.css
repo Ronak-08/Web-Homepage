@@ -525,7 +525,7 @@ input:checked + .slider:before {
   
 }
 
-.settings > .wrap {
+.settings > .1set > .wrap {
   display: flex;
   justify-content: space-between;
 }
