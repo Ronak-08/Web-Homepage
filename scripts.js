@@ -283,10 +283,77 @@ function addLink() {
     link.target = '_blank'; // Open link in a new tab
     link.innerHTML = `<i class="fa-solid">${linkText}</i>`; // Assuming you want to use an icon here
 
-    // Append the link to the icons container
-    document.getElementById('iconsContainer').appendChild(link);
+    // Create a delete button
+    const deleteButton = document.createElement('button');
+    deleteButton.textContent = 'Delete';
+    deleteButton.onclick = function() {
+        deleteLink(url);
+    };
+
+    // Create a container for the link and delete button
+    const linkContainer = document.createElement('div');
+    linkContainer.appendChild(link);
+    linkContainer.appendChild(deleteButton);
+
+    // Append the link container to the icons container
+    document.getElementById('iconsContainer').appendChild(linkContainer);
+
+    // Save to local storage
+    const links = JSON.parse(localStorage.getItem('links')) || [];
+    links.push({ url: url, text: linkText });
+    localStorage.setItem('links', JSON.stringify(links));
 
     // Clear the input fields
     document.getElementById('urlInput').value = '';
     document.getElementById('linkText').value = '';
 }
+
+function loadLinks() {
+    const links = JSON.parse(localStorage.getItem('links')) || [];
+    const iconsContainer = document.getElementById('iconsContainer');
+
+    links.forEach(linkData => {
+        const link = document.createElement('a');
+        link.href = linkData.url;
+        link.target = '_blank';
+        link.innerHTML = `<i class="fa-solid">${linkData.text}</i>`;
+
+        // Create a delete button
+        const deleteButton = document.createElement('button');
+        deleteButton.textContent = 'Delete';
+        deleteButton.onclick = function() {
+            deleteLink(linkData.url);
+        };
+
+        // Create a container for the link and delete button
+        const linkContainer = document.createElement('div');
+        linkContainer.appendChild(link);
+        linkContainer.appendChild(deleteButton);
+
+        // Append the link container to the icons container
+        iconsContainer.appendChild(linkContainer);
+    });
+}
+
+function deleteLink(url) {
+    // Remove the link container from the DOM
+    const iconsContainer = document.getElementById('iconsContainer');
+    const linkContainers = iconsContainer.getElementsByTagName('div');
+
+    for (let i = 0; i < linkContainers.length; i++) {
+        const link = linkContainers[i].getElementsByTagName('a')[0];
+        if (link && link.href === url) {
+            iconsContainer.removeChild(linkContainers[i]);
+            break;
+        }
+    }
+
+    // Remove the link from local storage
+    let links = JSON.parse(localStorage.getItem('links')) || [];
+    links = links.filter(linkData => linkData.url !== url);
+    localStorage.setItem('links', JSON.stringify(links));
+}
+
+// Load links from local storage when the page loads
+window.onload = loadLinks;
+
