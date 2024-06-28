@@ -446,6 +446,7 @@ border: 1px solid rgb(93,93,93);
 
 .settings .switch {
   position: relative;
+  top: 50px;
   display: inline-block;
   width: 54px;
   height: 28px;
