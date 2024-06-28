@@ -272,3 +272,21 @@ window.addEventListener('scroll', function() {
 
 
 
+function addLink() {
+    // Get the URL and link text from the input fields
+    const url = document.getElementById('urlInput').value;
+    const linkText = document.getElementById('linkText').value;
+
+    // Create a new anchor element
+    const link = document.createElement('a');
+    link.href = url;
+    link.target = '_blank'; // Open link in a new tab
+    link.innerHTML = `<i class="fa-solid">${linkText}</i>`; // Assuming you want to use an icon here
+
+    // Append the link to the icons container
+    document.getElementById('iconsContainer').appendChild(link);
+
+    // Clear the input fields
+    document.getElementById('urlInput').value = '';
+    document.getElementById('linkText').value = '';
+}
