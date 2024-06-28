@@ -110,7 +110,7 @@ text-align: center;
     display: none;
     position: absolute;
     top: 350px;
- 
+ left: 50%;
   flex-wrap: wrap;
     background-color: rgb(16 20 15);
     padding: 24px;
