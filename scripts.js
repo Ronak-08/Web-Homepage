@@ -47,7 +47,7 @@ async function getWeather(cityName) {
 
  
 
-    updateWeatherInfo(cityName, temperature, description);
+    updateWeatherInfo(cityName, temperature, description, icon);
     localStorage.setItem('savedCity', cityName);  // Save city name to local storage
   } else {
     console.log('City not found. Please check the city name and try again.');
