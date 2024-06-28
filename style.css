@@ -111,6 +111,7 @@ text-align: center;
     position: absolute;
     top: 350px;
  left: 50%;
+ right: 50%;
   flex-wrap: wrap;
     background-color: rgb(16 20 15);
     padding: 24px;
