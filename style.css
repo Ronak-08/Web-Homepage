@@ -655,6 +655,7 @@ li {
   font-size: 18px;
   padding: 10px;
   margin: 10px;
+  height: 40px;
 }
 #city-input {
   height: 40px;
