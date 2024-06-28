@@ -541,7 +541,7 @@ input:checked + .slider:before {
 }
 
 #colorPicker {
-  padding-right: 5px;
+  margin-right: 5px;
 }
  
 .settings {
