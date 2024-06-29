@@ -590,6 +590,9 @@ input:checked + .slider:before {
     display: block;
     color: var(--accent);
     font-size: 15px;
+    background: #5c626200;
+    padding: 10px;
+    margin: 10px;
     border: none;
     border-radius: 28px;
 }
