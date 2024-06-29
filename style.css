@@ -576,8 +576,6 @@ input:checked + .slider:before {
 .delete-button {
     display: none;
     margin-left: 10px;
-    position: absolute;
-    right: 0; /* Position it to the right end of the container */
     padding: 5px 10px;
     background-color: transparent; /* Transparent by default */
     cursor: pointer;
