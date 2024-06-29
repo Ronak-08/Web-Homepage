@@ -581,8 +581,7 @@ input:checked + .slider:before {
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
         color: var(--accent);
-    font-size: 15px;
-    background: #5c626200;
+ font-size: 15px;
     margin: 10px;
     border: none;
     border-radius: 28px;
