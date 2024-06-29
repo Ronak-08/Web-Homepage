@@ -16,6 +16,7 @@ https://ronak-08.github.io/Web-Homepage
 
 ## Features 🚀
 
+-**Mobile Friendly:** Our homepage is optimized for mobile devices, ensuring a seamless and responsive user experience across all screen sizes.
 - **Interactive Icons:** Quickly access your favorite websites with just a click.
 - **Dynamic Clock:** Always stay on schedule with a sleek, real-time clock.
 - **Customizable:** Personalize your experience by changing your name and accent color right on the homepage.
