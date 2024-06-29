@@ -220,7 +220,7 @@ border: 1px solid var(--accent); /* Border color on hover */
   margin-bottom: 45px;
 flex-wrap: wrap;
 }
-.icons > a{
+.icons > a, .link-container{
   display: flex;
   align-items: center;
   justify-content: center;
