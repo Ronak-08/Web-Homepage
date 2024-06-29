@@ -79,6 +79,10 @@ body {
   flex-shrink: 0;
 }
 
+.link {
+  margin-right: 20px;
+}
+
 #timeElement{
   padding: 6px;
   font-size: 50px;
