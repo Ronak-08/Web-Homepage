@@ -7,7 +7,7 @@ Its inspired by google's material design 3,
 This is more than just a homepage – it's your personalized gateway to the web.
 
 
-The homepage features a **clean and modern ** *material design* with a personalized greeting, a dynamic search bar, and sleek, customizable widgets for weather and time, ensuring a user-friendly and visually appealing experience.
+The homepage features a **clean and modern** *material design* with a personalized greeting, a dynamic search bar, and sleek, customizable widgets for weather and time, ensuring a user-friendly and visually appealing experience.
 
 ## You can try it here:
 https://my-webpage01.netlify.app
