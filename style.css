@@ -211,7 +211,7 @@ border: 1px solid var(--accent); /* Border color on hover */
    display: flex;
    align-items: center;
    justify-content: center;
-
+   transition: 0.2s ease;
  }
 
 
@@ -244,7 +244,7 @@ flex-wrap: wrap;
    border-radius: 45px;
    width: 26px;
    height: 26px;
-   transition: 0.2s ease;
+
  }
 
 
