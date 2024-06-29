@@ -13,11 +13,13 @@ https://ronak-08.github.io/Web-Homepage
 
 - **Interactive Icons:** Quickly access your favorite websites with just a click.
 - **Dynamic Clock:** Always stay on schedule with a sleek, real-time clock.
-- **Customizable:** Personalize your experience by changing your name right on the homepage.
+- **Customizable:** Personalize your experience by changing your name and accent color right on the homepage.
 - **Responsive Design:** Seamlessly adapts to any screen size for a consistent experience on desktop and mobile.
 - **Weather:** Provides Latest Weather of your Location.
 - **Latest News:** Stay informed with the latest headlines conveniently displayed.
-
+  
+- **Custom Accent Color:** make your favourite color the accent of the entire website 
+  
 ## Screenshots 📷
 
 ![screenshot](Images/IMG_20240622_143525.jpg)
