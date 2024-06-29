@@ -163,7 +163,7 @@ text-align: center;
 
 
 
-.popup > button:hover, .city > button:hover  {
+.popup > button:hover, .city > button:hover, .link:hover  {
    background-color: var(--accent);
           color: #353434;
           transform: scale(1.04);
