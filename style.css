@@ -211,7 +211,6 @@ border: 1px solid var(--accent); /* Border color on hover */
 
 .icons, .link-container {
   display: flex;
- 
   padding: 5px;
   border: none;
   align-items: center;
