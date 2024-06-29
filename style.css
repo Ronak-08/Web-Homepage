@@ -57,7 +57,7 @@ body {
         
  
 
-#city-input {
+#city-input, #urlInput {
  font-weight: 400;
   margin: 5px;
   border: none;
