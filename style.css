@@ -581,6 +581,8 @@ input:checked + .slider:before {
     background: black;
     color: var(--accent);
     font-size: 15px;
+    border: none;
+    border-radius: 18px;
 }
 
 
