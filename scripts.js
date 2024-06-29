@@ -293,9 +293,6 @@ function addLink() {
         deleteLink(url);
     };
 
-    // Hide the delete button by default
-    deleteButton.style.display = 'none';
-
     // Create a container for the link and delete button
     const linkContainer = document.createElement('div');
     linkContainer.className = 'link-container';
@@ -312,24 +309,6 @@ function addLink() {
 
     // Clear the input field
     document.getElementById('urlInput').value = '';
-
-    // Add long-press functionality
-    linkContainer.addEventListener('mousedown', function(e) {
-        linkContainer.pressed = true;
-        setTimeout(function() {
-            if (linkContainer.pressed) {
-                deleteButton.style.display = 'block';
-            }
-        }, 1000); // 1 second long press
-    });
-
-    linkContainer.addEventListener('mouseup', function(e) {
-        linkContainer.pressed = false;
-    });
-
-    linkContainer.addEventListener('mouseleave', function(e) {
-        linkContainer.pressed = false;
-    });
 }
 
 function loadLinks() {
@@ -353,9 +332,6 @@ function loadLinks() {
             deleteLink(linkData.url);
         };
 
-        // Hide the delete button by default
-        deleteButton.style.display = 'none';
-
         // Create a container for the link and delete button
         const linkContainer = document.createElement('div');
         linkContainer.className = 'link-container';
@@ -364,24 +340,6 @@ function loadLinks() {
 
         // Append the link container to the icons container
         iconsContainer.appendChild(linkContainer);
-
-        // Add long-press functionality
-        linkContainer.addEventListener('mousedown', function(e) {
-            linkContainer.pressed = true;
-            setTimeout(function() {
-                if (linkContainer.pressed) {
-                    deleteButton.style.display = 'block';
-                }
-            }, 1000); // 1 second long press
-        });
-
-        linkContainer.addEventListener('mouseup', function(e) {
-            linkContainer.pressed = false;
-        });
-
-        linkContainer.addEventListener('mouseleave', function(e) {
-            linkContainer.pressed = false;
-        });
     });
 }
 
