@@ -26,7 +26,7 @@ https://ronak-08.github.io/Web-Homepage
 
 ![screenshot](Images/Screenshot_20240629-135813.png)
 
-![screenshot](Images/Screenshot_20240622-201749.png)
+![screenshot](Images/Screenshot_20240629-140049.png)
 
 ## Get Started 🛠️
 
