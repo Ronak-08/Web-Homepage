@@ -755,7 +755,7 @@ margin:4rem;
 
 @media only screen and (min-width: 768px) {
   .search-bar{
-    width: 40vw;
+    width: 40%;
     height: 65px;
     font-size: 18px;
     margin-bottom: 3vh;
