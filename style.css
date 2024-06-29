@@ -564,11 +564,7 @@ input:checked + .slider:before {
     margin-left: 10px;
 }
 
-.link-container {
-    display: flex;
-    align-items: center;
-    margin-bottom: 5px;
-}
+
 
 .link-container img {
     margin-right: 10px;
