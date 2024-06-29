@@ -207,16 +207,23 @@ transition: all 0.3s ease;
 border: 1px solid var(--accent); /* Border color on hover */
 }
 
+ .link-container{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background: #4a4648;
+     background: #4a4648;
+   border-radius: 45px;
+ }
 
 
-.icons, .link-container {
+.icons {
   display: flex;
   padding: 5px;
   border: none;
   align-items: center;
   justify-content: center;
   margin: 10px;
-  margin-bottom: 45px;
 flex-wrap: wrap;
 }
 .icons > a {
@@ -235,10 +242,9 @@ flex-wrap: wrap;
 }
 
  .link-container img {
-   background: #4a4648;
-   border-radius: 45px;
-   width: 23px;
-   height: 23px;
+ 
+   width: 26px;
+   height: 26px;
    transition: 0.2s ease;
    padding: 10px;
  }
