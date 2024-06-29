@@ -17,8 +17,10 @@ https://ronak-08.github.io/Web-Homepage
 - **Responsive Design:** Seamlessly adapts to any screen size for a consistent experience on desktop and mobile.
 - **Weather:** Provides Latest Weather of your Location.
 - **Latest News:** Stay informed with the latest headlines conveniently displayed.
-  
-- **Custom Accent Color:** make your favourite color the accent of the entire website 
+- **Random Background Image:** Random image in background, toogle it in settings.
+- **Custom Accent Color:** make your favourite color the accent of the entire website
+
+**Note:** ***Click on name to input new name***
   
 ## Screenshots 📷
 
