@@ -211,9 +211,7 @@ border: 1px solid var(--accent); /* Border color on hover */
    display: flex;
    align-items: center;
    justify-content: center;
-   background: #4a4648;
-     background: #4a4648;
-   border-radius: 45px;
+
  }
 
 
@@ -242,7 +240,9 @@ flex-wrap: wrap;
 }
 
  .link-container img {
- 
+    background: #4a4648;
+
+   border-radius: 45px;
    width: 26px;
    height: 26px;
    transition: 0.2s ease;
