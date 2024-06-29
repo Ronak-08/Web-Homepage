@@ -220,7 +220,7 @@ border: 1px solid var(--accent); /* Border color on hover */
   margin-bottom: 45px;
 flex-wrap: wrap;
 }
-.icons > a, .link-container img {
+.icons > a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -235,7 +235,17 @@ flex-wrap: wrap;
    font-size: 24px;
 }
 
-.icons > a:hover {
+ .link-container img {
+   background: #4a4648;
+   border-radius: 45px;
+   width: 25px;
+   height: 25px;
+   transition: 0.2s ease;
+ }
+
+
+
+.icons > a:hover, .link-container imag:hover {
   transform: scale(1.1);
 }
 
