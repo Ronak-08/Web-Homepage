@@ -2,7 +2,12 @@
 
 # Awesome Homepage 🌟
 
-Welcome to our awesome homepage project! This is more than just a homepage – it's your personalized gateway to the web.
+Welcome to our awesome homepage project! 
+Its inspired by google's material design 3,
+This is more than just a homepage – it's your personalized gateway to the web.
+
+
+The homepage features a **clean and modern ** *material design* with a personalized greeting, a dynamic search bar, and sleek, customizable widgets for weather and time, ensuring a user-friendly and visually appealing experience.
 
 ## You can try it here:
 https://my-webpage01.netlify.app
@@ -42,5 +47,5 @@ We welcome contributions! If you have ideas for improvements or new features, fe
 
 ## Feedback 💬
 
-Have feedback or questions? We'd love to hear from you! Reach out to us via ronakameta65@gmail.com
+Have feedback or questions? I'd love to hear from you! Reach out to me via ronakameta65@gmail.com
 
