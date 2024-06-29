@@ -687,6 +687,11 @@ gap: 5rem;
   margin: 0px;
 }
 
+.time:hover{
+  box-shadow: none;
+  border: none;
+}
+
 #currentDay {
   position: absolute;
   top: 230px;
