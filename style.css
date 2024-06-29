@@ -245,7 +245,7 @@ flex-wrap: wrap;
 
 
 
-.icons > a:hover, .link-container imag:hover {
+.icons > a:hover, .link-container > img:hover {
   transform: scale(1.1);
 }
 
