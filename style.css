@@ -406,6 +406,7 @@ color: black;
   align-items: center;
   flex-direction: row;
   margin-bottom: 2vh;
+  margin-top: 3vh;
 }
 
 .weather > #weather-icon {
