@@ -238,8 +238,8 @@ flex-wrap: wrap;
  .link-container img {
    background: #4a4648;
    border-radius: 45px;
-   width: 25px;
-   height: 25px;
+   width: 23px;
+   height: 23px;
    transition: 0.2s ease;
  }
 
