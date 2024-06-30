@@ -595,7 +595,7 @@ input:checked + .slider:before {
 
 
 .link-container img {
-  
+  margin: 4px;
     width: 31px;
     height: 31px;
 }
