@@ -596,8 +596,8 @@ input:checked + .slider:before {
 
 .link-container img {
   
-    width: 33px;
-    height: 33px;
+    width: 31px;
+    height: 31px;
 }
 
 .link-container:hover .delete-button {
