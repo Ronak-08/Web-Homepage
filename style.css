@@ -602,8 +602,8 @@ input:checked + .slider:before {
 
 
 .link-container img {
-    width: 31px;
-    height: 31px;
+    width: 30px;
+    height: 30px;
     padding: 0px;
 background: none;
 }
