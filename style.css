@@ -600,7 +600,7 @@ input:checked + .slider:before {
     width: 31px;
     height: 31px;
     padding: 0px;
-    padding: 0px;
+
 }
 
 .link-container:hover .delete-button {
