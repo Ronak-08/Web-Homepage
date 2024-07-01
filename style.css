@@ -615,6 +615,7 @@ input:checked + .slider:before {
   right: 10px;
   top: 50%;
   border: none;
+  border-radius: 24px;
   background:#5c626200 ;
   color: var(--accent);
   margin: 0px;
