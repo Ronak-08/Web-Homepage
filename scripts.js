@@ -373,3 +373,10 @@ document.getElementById('searchEngine').addEventListener('change', function() {
       document.getElementById('searchInput').placeholder = `Search on ${this.options[this.selectedIndex].text.trim()}...`;
     });
     
+    
+    document.getElementById('searchInput').addEventListener('keypress', function(event) {
+      if (event.key === 'Enter') {
+        event.preventDefault();
+        document.getElementById('searchForm').submit();
+      }
+    });
