@@ -595,13 +595,12 @@ input:checked + .slider:before {
 
 
 .link-container img {
-  margin: 4px;
     width: 31px;
     height: 31px;
 }
 
 .link-container:hover .delete-button {
-    display: block;
+    display: flex;
 }
 
 .delete-button:hover {
