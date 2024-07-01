@@ -583,7 +583,7 @@ input:checked + .slider:before {
 .delete-button {
     display: none;
     margin-left: 10px;
-    padding: 5px;
+    padding: 5px 10px;
     background-color: transparent; /* Transparent by default */
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
