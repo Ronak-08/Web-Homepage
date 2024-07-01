@@ -618,7 +618,7 @@ margin: 0;
 }
 .link-container > a {
   padding: 0px;
-  margin: 15px;
+  margin: 0px;
 display: flex;
 align-items: center;
 justify-content: center;
