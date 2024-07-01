@@ -613,6 +613,10 @@ input:checked + .slider:before {
 .search-engine-selector {
   position: absolute;
   right: 10px;
+  top: 50%;
+  border: none;
+  color: var(--accent);
+  margin: 0px;
 }
 
 @media screen and (min-width:992px) {
