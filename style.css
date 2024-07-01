@@ -607,20 +607,16 @@ input:checked + .slider:before {
 
 
 .link-container img {
-  display: flex;
     width: 28px;
     height: 28px;
     padding: 2px;
  background: #4a4648;
  border-radius: 28px;
- align-items: center;
-   justify-content: center;
+display: block;
+margin: auto;
 
 }
 .link-container > a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 0px;
   margin: 15px;
 
