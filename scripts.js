@@ -370,5 +370,12 @@ window.onload = loadLinks;
 
 document.getElementById('searchEngine').addEventListener('change', function() {
       document.getElementById('searchForm').action = this.value;
-      document.getElementById('searchInput').placeholder = `Search on ${this.options[this.selectedIndex].text}...`;
+      document.getElementById('searchInput').placeholder = `Search on ${this.options[this.selectedIndex].text.trim()}...`;
+    });
+    
+    document.getElementById('searchInput').addEventListener('keypress', function(event) {
+      if (event.key === 'Enter') {
+        event.preventDefault();
+        document.getElementById('searchForm').submit();
+      }
     });
