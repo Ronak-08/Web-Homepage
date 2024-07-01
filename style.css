@@ -612,9 +612,8 @@ input:checked + .slider:before {
 
 .search-engine-selector {
   position: absolute;
-right: 13px;
-align-items: center;
-justify-content: center;
+right: 16px;
+
   border: none;
   border-radius: 24px;
   background:#5c626200 ;
