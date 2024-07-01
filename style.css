@@ -624,7 +624,7 @@ input:checked + .slider:before {
 .search-engine-selector {
   position: absolute;
   text-align: center;
-right: 20%;
+right: 13%;
 top: 45%;
   border: none;
   border-radius: 24px;
