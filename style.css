@@ -239,7 +239,7 @@ border: 1px solid var(--accent); /* Border color on hover */
   justify-content: center;
   margin: 10px;
 flex-wrap: wrap;
- margin-top: 2rem;
+ margin-top: 1.5rem;
 }
 .icons > a, .Delete {
   display: flex;
