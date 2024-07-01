@@ -619,7 +619,7 @@ margin: auto;
 .link-container > a {
   padding: 0px;
   margin: 15px;
-
+display: flex;
 }
 
 .link-container:hover .delete-button {
