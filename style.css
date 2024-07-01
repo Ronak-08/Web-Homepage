@@ -604,7 +604,8 @@ input:checked + .slider:before {
 }
 .link-container > a {
   padding: 0px;
-  margin: 5px;
+  margin: 10px;
+  
 }
 
 .link-container:hover .delete-button {
