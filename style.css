@@ -222,6 +222,7 @@ border: 1px solid var(--accent); /* Border color on hover */
    border-radius: 45px;
    transition:  0.2s ease;
    width: 44px;
+   margin-top: 2vh;
  }
  
  .link-container:hover {
