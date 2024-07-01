@@ -823,6 +823,7 @@ margin:4rem;
   }
   .icons {
     font-size: 28px;
+    justify-content: center;
   }
   .container{
     max-width: 80%;
