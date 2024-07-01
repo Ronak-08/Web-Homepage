@@ -620,6 +620,8 @@ margin: auto;
   padding: 0px;
   margin: 15px;
 display: flex;
+align-items: center;
+justify-content: center;
 }
 
 .link-container:hover .delete-button {
