@@ -624,6 +624,11 @@ input:checked + .slider:before {
   -webkit-appearance: none;
       -moz-appearance: none;
       appearance: none;
+      outline: none;
+}
+
+.search-engine-selector::focus {
+  border:none;
 }
 
 .search-bar-wrapper {
