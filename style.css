@@ -217,7 +217,7 @@ border: 1px solid var(--accent); /* Border color on hover */
    justify-content: center;
    margin:5px; !important
    padding: 5px; !important
- border: 3px solid red;
+ border: 3px solid red; !important
  }
 
 
