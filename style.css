@@ -626,6 +626,10 @@ input:checked + .slider:before {
       appearance: none;
 }
 
+.search-bar-wrapper {
+  position: relative;
+}
+
 @media screen and (min-width:992px) {
 .search{
   display: flex;
