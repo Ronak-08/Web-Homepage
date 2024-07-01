@@ -269,45 +269,48 @@ window.addEventListener('scroll', function() {
             searchContainer.classList.remove('sticky');
         }
     });
+    
+    
 
+let deleteMode = false;
 
+function toggleDeleteMode() {
+    deleteMode = !deleteMode;
+    const linkContainers = document.querySelectorAll('.link-container');
+    linkContainers.forEach(container => {
+        const deleteButton = container.querySelector('.delete-button');
+        deleteButton.style.display = deleteMode ? 'block' : 'none';
+    });
+}
 
 function addLink() {
-    // Get the URL from the input field
     const url = document.getElementById('urlInput').value;
-
-    // Fetch favicon using a third-party service
     const faviconUrl = `https://www.google.com/s2/favicons?domain=${url}`;
 
-    // Create a new anchor element
     const link = document.createElement('a');
     link.href = url;
-    link.target = '_blank'; // Open link in a new tab
+    link.target = '_blank';
     link.innerHTML = `<img src="${faviconUrl}" alt="icon">`;
 
-    // Create a delete button
     const deleteButton = document.createElement('button');
-    deleteButton.textContent = 'Delete';
+    deleteButton.innerHTML = 'X';
     deleteButton.className = 'delete-button';
+    deleteButton.style.display = deleteMode ? 'block' : 'none';
     deleteButton.onclick = function() {
         deleteLink(url);
     };
 
-    // Create a container for the link and delete button
     const linkContainer = document.createElement('div');
     linkContainer.className = 'link-container';
     linkContainer.appendChild(link);
     linkContainer.appendChild(deleteButton);
 
-    // Append the link container to the icons container
     document.getElementById('iconsContainer').appendChild(linkContainer);
 
-    // Save to local storage
     const links = JSON.parse(localStorage.getItem('links')) || [];
     links.push({ url: url });
     localStorage.setItem('links', JSON.stringify(links));
 
-    // Clear the input field
     document.getElementById('urlInput').value = '';
 }
 
@@ -316,7 +319,6 @@ function loadLinks() {
     const iconsContainer = document.getElementById('iconsContainer');
 
     links.forEach(linkData => {
-        // Fetch favicon using a third-party service
         const faviconUrl = `https://www.google.com/s2/favicons?domain=${linkData.url}`;
 
         const link = document.createElement('a');
@@ -324,27 +326,24 @@ function loadLinks() {
         link.target = '_blank';
         link.innerHTML = `<img src="${faviconUrl}" alt="icon">`;
 
-        // Create a delete button
         const deleteButton = document.createElement('button');
-        deleteButton.textContent = 'Delete';
+        deleteButton.innerHTML = 'X';
         deleteButton.className = 'delete-button';
+        deleteButton.style.display = deleteMode ? 'block' : 'none';
         deleteButton.onclick = function() {
             deleteLink(linkData.url);
         };
 
-        // Create a container for the link and delete button
         const linkContainer = document.createElement('div');
         linkContainer.className = 'link-container';
         linkContainer.appendChild(link);
         linkContainer.appendChild(deleteButton);
 
-        // Append the link container to the icons container
         iconsContainer.appendChild(linkContainer);
     });
 }
 
 function deleteLink(url) {
-    // Remove the link container from the DOM
     const iconsContainer = document.getElementById('iconsContainer');
     const linkContainers = iconsContainer.getElementsByClassName('link-container');
 
@@ -356,14 +355,13 @@ function deleteLink(url) {
         }
     }
 
-    // Remove the link from local storage
     let links = JSON.parse(localStorage.getItem('links')) || [];
     links = links.filter(linkData => linkData.url !== url);
     localStorage.setItem('links', JSON.stringify(links));
 }
 
-// Load links from local storage when the page loads
 window.onload = loadLinks;
+
 
 
 
