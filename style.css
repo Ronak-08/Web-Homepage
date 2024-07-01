@@ -604,7 +604,7 @@ input:checked + .slider:before {
 .link-container img {
     width: 30px;
     height: 30px;
-    padding: 0px;
+    padding: 2px;
 background: none;
 }
 .link-container > a {
