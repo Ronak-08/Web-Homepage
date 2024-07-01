@@ -718,6 +718,7 @@ right: 100px;
 .icons {
  font-size: 38px;
 gap: 5rem;
+justify-content: center;
 }
 #timeElement {
   padding: 22px;
