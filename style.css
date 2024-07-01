@@ -225,6 +225,10 @@ border: 1px solid var(--accent); /* Border color on hover */
   
  }
  
+ .link-container.delete-mode {
+    width: 100px; /* Adjust this value as needed */
+}
+ 
  .link-container:hover {
    width: 40%;
    transform: scale(1.1);
