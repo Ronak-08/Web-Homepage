@@ -364,3 +364,11 @@ function deleteLink(url) {
 
 // Load links from local storage when the page loads
 window.onload = loadLinks;
+
+
+
+
+document.getElementById('searchEngine').addEventListener('change', function() {
+      document.getElementById('searchForm').action = this.value;
+      document.getElementById('searchInput').placeholder = `Search on ${this.options[this.selectedIndex].text}...`;
+    });
