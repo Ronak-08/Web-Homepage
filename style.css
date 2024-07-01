@@ -610,8 +610,6 @@ background: none;
 .link-container > a {
   padding: 0px;
   margin: 10px;
-  align-items: center;
-  justify-content: center;
 }
 
 .link-container:hover .delete-button {
