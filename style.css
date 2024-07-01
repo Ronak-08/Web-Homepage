@@ -583,13 +583,13 @@ input:checked + .slider:before {
 .delete-button {
     display: none;
     margin-left: 10px;
-    padding: 5px 10px;
+    padding: 5px;
     background-color: transparent; /* Transparent by default */
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
         color: var(--accent);
- font-size: 15px;
-    margin: 10px;
+ font-size: 13px;
+    margin: 5px;
     border: none;
     border-radius: 28px;
 }
