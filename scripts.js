@@ -367,16 +367,33 @@ window.onload = loadLinks;
 
 
 
+const searchEngineSelector = document.getElementById('searchEngine');
+    const searchForm = document.getElementById('searchForm');
+    const searchInput = document.getElementById('searchInput');
 
-document.getElementById('searchEngine').addEventListener('change', function() {
-      document.getElementById('searchForm').action = this.value;
-      document.getElementById('searchInput').placeholder = `Search on ${this.options[this.selectedIndex].text.trim()}...`;
+    // Load the previously selected search engine from local storage
+    const savedEngine = localStorage.getItem('selectedSearchEngine');
+    if (savedEngine) {
+      searchEngineSelector.value = savedEngine;
+      searchForm.action = savedEngine;
+      const selectedOptionText = searchEngineSelector.options[searchEngineSelector.selectedIndex].text.trim();
+      searchInput.placeholder = `Search on ${selectedOptionText}...`;
+    }
+
+    searchEngineSelector.addEventListener('change', function() {
+      const selectedEngine = this.value;
+      searchForm.action = selectedEngine;
+      const selectedOptionText = this.options[this.selectedIndex].text.trim();
+      searchInput.placeholder = `Search on ${selectedOptionText}...`;
+      
+      // Save the selected search engine to local storage
+      localStorage.setItem('selectedSearchEngine', selectedEngine);
     });
-    
-    
-    document.getElementById('searchInput').addEventListener('keypress', function(event) {
+
+    // Ensure form submission works on Enter key press
+    searchInput.addEventListener('keypress', function(event) {
       if (event.key === 'Enter') {
         event.preventDefault();
-        document.getElementById('searchForm').submit();
+        searchForm.submit();
       }
     });
