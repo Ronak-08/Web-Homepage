@@ -215,7 +215,6 @@ border: 1px solid var(--accent); /* Border color on hover */
    display: flex;
    align-items: center;
    justify-content: center;
- margin-bottom: 2vh;
  border: 3px solid red;
  }
 
