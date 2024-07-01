@@ -603,6 +603,7 @@ input:checked + .slider:before {
 .link-container > a {
   padding: 0px;
   margin: 15px;
+  align-items: center;
 }
 
 .link-container:hover .delete-button {
