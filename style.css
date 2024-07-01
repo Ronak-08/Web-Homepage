@@ -590,7 +590,7 @@ input:checked + .slider:before {
     display: none;
     margin-left: 10px;
     padding: 5px 10px;
-    background-color: transparent; /* Transparent by default */
+    background-color: #4a4648;
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
         color: var(--accent);
@@ -598,6 +598,7 @@ input:checked + .slider:before {
     margin: 5px;
     border: none;
     border-radius: 28px;
+    
 }
 
 
