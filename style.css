@@ -226,6 +226,7 @@ border: 1px solid var(--accent); /* Border color on hover */
  
  .link-container:hover {
    width: 40%;
+   transform: scale(1.1);
  }
 
 
