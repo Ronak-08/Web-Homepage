@@ -225,7 +225,7 @@ border: 1px solid var(--accent); /* Border color on hover */
  }
  
  .link-container:hover {
-   width: 100%;
+   width: 40%;
  }
 
 
