@@ -604,7 +604,8 @@ input:checked + .slider:before {
     width: 28px;
     height: 28px;
     padding: 2px;
-background: none;
+ background: #4a4648;
+ border-radius: 28px;
 }
 .link-container > a {
   padding: 0px;
