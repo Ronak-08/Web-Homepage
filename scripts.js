@@ -280,6 +280,8 @@ function toggleDeleteMode() {
     linkContainers.forEach(container => {
         const deleteButton = container.querySelector('.delete-button');
         deleteButton.style.display = deleteMode ? 'block' : 'none';
+        
+        container.classList.toggle('delete-mode', deleteMode);
     });
 }
 
