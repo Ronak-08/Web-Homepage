@@ -617,6 +617,7 @@ input:checked + .slider:before {
   border: none;
   color: var(--accent);
   margin: 0px;
+  z-index: 1000;
 }
 
 @media screen and (min-width:992px) {
