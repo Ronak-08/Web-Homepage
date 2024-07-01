@@ -622,7 +622,7 @@ input:checked + .slider:before {
 
 
 .search-engine-selector {
-  position: absolute;
+  position: relative;
 right: 19px;
 top: 45%;
   border: none;
