@@ -623,7 +623,7 @@ input:checked + .slider:before {
 
 .search-engine-selector {
   position: relative;
-
+right: 20%;
 top: 45%;
   border: none;
   border-radius: 24px;
