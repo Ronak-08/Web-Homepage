@@ -602,6 +602,10 @@ input:checked + .slider:before {
     padding: 0px;
 
 }
+.link-container > a {
+  padding: 0px;
+  margin: 0px;
+}
 
 .link-container:hover .delete-button {
     display: flex;
