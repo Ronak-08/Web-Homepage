@@ -215,7 +215,7 @@ border: 1px solid var(--accent); /* Border color on hover */
    display: flex;
    align-items: center;
    justify-content: center;
-   margin:0px; 
+   margin:10px; 
    padding: 0px; 
  height: 44px;
  background: #4a4648;
@@ -249,13 +249,6 @@ flex-wrap: wrap;
    font-size: 24px;
 }
 
- .link-container img {
-    background: #4a4648;
-   border-radius: 45px;
-   width: 26px;
-   height: 26px;
-
- }
 
 
 
