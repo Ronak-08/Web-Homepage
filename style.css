@@ -614,6 +614,7 @@ input:checked + .slider:before {
  background: #4a4648;
  border-radius: 28px;
  align-items: center;
+   justify-content: center;
 
 }
 .link-container > a {
