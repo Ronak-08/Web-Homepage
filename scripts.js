@@ -339,7 +339,7 @@ function loadLinks() {
         linkContainer.appendChild(deleteButton);
 
         // Append the link container to the icons container
-        customIcons.appendChild(linkContainer);
+        iconsContainer.appendChild(linkContainer);
     });
 }
 
