@@ -223,6 +223,10 @@ border: 1px solid var(--accent); /* Border color on hover */
    transition:  0.2s ease;
    width: 44px;
  }
+ 
+ .link-container:hover {
+   width: 100%;
+ }
 
 
 .icons {
@@ -603,7 +607,7 @@ input:checked + .slider:before {
 .link-container > a {
   padding: 0px;
   margin: 15px;
-  align-items: center;
+
 }
 
 .link-container:hover .delete-button {
