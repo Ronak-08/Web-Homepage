@@ -680,7 +680,9 @@ top: 45%;
             background-color: #464646;
         }
 
-
+ #file-input {
+            display: none;
+        }
 
 
 
