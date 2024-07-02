@@ -670,6 +670,8 @@ top: 45%;
 .search-engine-selector{
   position: relative;
   left: 10px;
+  color: black;
+  background: var(--accent);
 }
 
 .search-bar {
