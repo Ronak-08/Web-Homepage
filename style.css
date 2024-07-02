@@ -672,6 +672,7 @@ top: 45%;
   left: 10px;
   color: black;
   background: var(--accent);
+  padding: 10px;
 }
 
 .search-bar {
