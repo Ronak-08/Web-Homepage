@@ -801,6 +801,9 @@ li {
 }
 .avatar{
   position: absolute;
+  border-radius: 50%;
+            cursor: pointer;
+            object-fit: cover
   width: 100px;
   height: 100px;
   left: 100px;
