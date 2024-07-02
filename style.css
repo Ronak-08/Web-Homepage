@@ -809,20 +809,19 @@ margin:4rem;
 .settings > p {
   font-size: 20px;
 }
-
-
+}
 
 @media only screen and (min-width: 768px) {
-  .search-bar{
+  
+  .search-bar {
     width: 50%;
     height: 65px;
     font-size: 18px;
     margin-bottom: 3vh;
     margin-top: 3vh;
-    
   }
   
-  .search-engine-selector{
+  .search-engine-selector {
   position: relative;
   left: 10px;
   color: black;
@@ -836,7 +835,6 @@ margin:4rem;
   }
   .greet {
     margin-bottom: 15px;
-  
   }
   .hello {
   font-size: 36px;
