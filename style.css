@@ -832,7 +832,9 @@ margin:4rem;
 .weather {
   max-width: 60%;
 }
-  
+  .setList {
+    font-size: 18px;
+  }
 
   .greet {
     margin-bottom: 15px;
