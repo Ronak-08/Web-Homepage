@@ -400,6 +400,7 @@ const searchEngineSelector = document.getElementById('searchEngine');
 
 
 
+
 document.getElementById('searchInput').addEventListener('input', function() {
     let query = this.value;
 
@@ -428,9 +429,14 @@ function displaySuggestions(suggestions) {
     clearSuggestions();
 
     suggestions.forEach(suggestion => {
-        const option = document.createElement('option');
-        option.value = suggestion;
-        suggestionsList.appendChild(option);
+        const suggestionItem = document.createElement('p');
+        suggestionItem.textContent = suggestion;
+        suggestionItem.classList.add('suggestion-item');
+        suggestionItem.addEventListener('click', function() {
+            document.getElementById('searchInput').value = suggestion;
+            clearSuggestions();
+        });
+        suggestionsList.appendChild(suggestionItem);
     });
 }
 
