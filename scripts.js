@@ -451,3 +451,33 @@ function clearSuggestions() {
 document.getElementById('searchEngine').addEventListener('change', function() {
     document.getElementById('searchForm').action = this.value;
 });
+
+
+
+
+
+const avatar = document.querySelector('.avatar');
+        const fileInput = document.getElementById('file-input');
+
+        // Load image from local storage if it exists
+        const storedImage = localStorage.getItem('uploadedAvatar');
+        if (storedImage) {
+            avatar.src = storedImage;
+        }
+
+        avatar.addEventListener('click', () => {
+            fileInput.click();
+        });
+
+        fileInput.addEventListener('change', (event) => {
+            const file = event.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = (e) => {
+                    const result = e.target.result;
+                    avatar.src = result;
+                    localStorage.setItem('uploadedAvatar', result); // Save the image to local storage
+                };
+                reader.readAsDataURL(file);
+            }
+        });
