@@ -397,3 +397,48 @@ const searchEngineSelector = document.getElementById('searchEngine');
         searchForm.submit();
       }
     });
+
+
+
+document.getElementById('searchInput').addEventListener('input', function() {
+    let query = this.value;
+
+    if (query.length > 0) {
+        fetchSuggestions(query);
+    } else {
+        clearSuggestions();
+    }
+});
+
+function fetchSuggestions(query) {
+    const url = `https://suggestqueries.google.com/complete/search?client=chrome&q=${encodeURIComponent(query)}&callback=handleSuggestions`;
+
+    const script = document.createElement('script');
+    script.src = url;
+    document.body.appendChild(script);
+    document.body.removeChild(script);
+}
+
+function handleSuggestions(data) {
+    displaySuggestions(data[1]);
+}
+
+function displaySuggestions(suggestions) {
+    const suggestionsList = document.getElementById('suggestions');
+    clearSuggestions();
+
+    suggestions.forEach(suggestion => {
+        const option = document.createElement('option');
+        option.value = suggestion;
+        suggestionsList.appendChild(option);
+    });
+}
+
+function clearSuggestions() {
+    const suggestionsList = document.getElementById('suggestions');
+    suggestionsList.innerHTML = '';
+}
+
+document.getElementById('searchEngine').addEventListener('change', function() {
+    document.getElementById('searchForm').action = this.value;
+});
