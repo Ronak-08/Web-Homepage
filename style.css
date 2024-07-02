@@ -829,12 +829,9 @@ margin:4rem;
   padding: 10px;
 }
   
-  .wrapper {
-    max-width: 70%;
-    justify-content: center;
-    display: flex;
-    align-items: center;
-  }
+.weather {
+  max-width: 60%;
+}
   
 
   .greet {
