@@ -666,6 +666,11 @@ top: 45%;
   justify-content: center;
   align-items: center;
 }
+
+.search-engine-selector{
+  position: relative;
+}
+
 .search-bar {
    width: 610px;
    height: 82px;
