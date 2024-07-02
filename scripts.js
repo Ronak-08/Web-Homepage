@@ -437,7 +437,7 @@ function displaySuggestions(suggestions) {
             clearSuggestions();
             
             document.getElementById('searchForm').submit(); // Submit the form
-        });
+      
         });
         suggestionsList.appendChild(suggestionItem);
     });
