@@ -660,6 +660,29 @@ top: 45%;
 }
 
 
+#suggestions {
+            border: 1px solid #ccc;
+            max-height: 200px;
+            overflow-y: auto;
+            position: absolute;
+            width: calc(100% - 20px);
+            background-color: white;
+            z-index: 1000;
+        }
+
+        .suggestion-item {
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .suggestion-item:hover {
+            background-color: #f0f0f0;
+        }
+
+
+
+
+
 @media screen and (min-width:992px) {
 .search{
   display: flex;
