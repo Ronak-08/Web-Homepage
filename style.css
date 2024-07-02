@@ -241,7 +241,6 @@ border: 1px solid var(--accent); /* Border color on hover */
   padding: 5px;
   border: none;
   align-items: center;
- justify-content: center;
   margin: 10px;
 flex-wrap: wrap;
  margin-top: 1.5rem;
