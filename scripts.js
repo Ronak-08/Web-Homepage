@@ -435,6 +435,9 @@ function displaySuggestions(suggestions) {
         suggestionItem.addEventListener('click', function() {
             document.getElementById('searchInput').value = suggestion;
             clearSuggestions();
+            
+            document.getElementById('searchForm').submit(); // Submit the form
+        });
         });
         suggestionsList.appendChild(suggestionItem);
     });
