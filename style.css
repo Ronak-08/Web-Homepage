@@ -831,11 +831,12 @@ margin:4rem;
   
   .wrapper {
     max-width: 70%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
   }
   
-  .weather {
-    max-width: 60%;
-  }
+
   .greet {
     margin-bottom: 15px;
   }
