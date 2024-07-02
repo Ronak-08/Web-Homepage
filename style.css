@@ -717,7 +717,8 @@ right: 100px;
 
 #weather-icon {
 position: relative;
-top: 50px;
+top: 40px;
+left: 20px;
  width: 40px;
  height: 40px;
 }
