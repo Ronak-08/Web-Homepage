@@ -821,6 +821,16 @@ margin:4rem;
     margin-top: 3vh;
     
   }
+  
+  .search-engine-selector{
+  position: relative;
+  left: 10px;
+  color: black;
+  background: var(--accent);
+  padding: 10px;
+}
+  
+  
   .weather {
     max-width: 60%;
   }
