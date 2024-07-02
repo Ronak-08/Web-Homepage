@@ -394,6 +394,8 @@ a{
   padding: 10px;
   margin: 7px;
   margin-top: 35px;
+  background: black;
+  color: var(--accent);
 }
 
 .hello {
