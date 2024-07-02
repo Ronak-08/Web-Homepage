@@ -661,22 +661,23 @@ top: 45%;
 
 
 #suggestions {
-            border: 1px solid #ccc;
+        
             max-height: 200px;
             overflow-y: auto;
             position: absolute;
             width: calc(100% - 20px);
-            background-color: white;
+            background-color: black;
             z-index: 1000;
         }
 
         .suggestion-item {
             padding: 10px;
             cursor: pointer;
+            color: var(--accent);
         }
 
         .suggestion-item:hover {
-            background-color: #f0f0f0;
+            background-color: #464646;
         }
 
 
