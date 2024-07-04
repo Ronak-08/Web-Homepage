@@ -700,8 +700,10 @@ top: 45%;
 }
 
 .Link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 22px;
-  background-color: var(--srcbar);
   color: var(--accent);
   border-radius: 28px;
 }
