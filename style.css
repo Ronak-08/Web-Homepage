@@ -688,6 +688,13 @@ top: 45%;
         }
 
 
+.foot {
+  background-color: black;
+  padding: 10px;
+  border-radius: 18px;
+}
+
+
 
 @media screen and (min-width:992px) {
 .search{
