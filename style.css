@@ -709,6 +709,9 @@ top: 45%;
   padding: 5px;
 }
 .Link > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: var(--srcbar);
   border-radius: 28px;
   height: 49px;
