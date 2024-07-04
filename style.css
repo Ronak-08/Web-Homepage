@@ -710,6 +710,7 @@ top: 45%;
 }
 .Link > a {
   background-color: var(--srcbar);
+  border-radius: 28px;
 }
 
 @media screen and (min-width:992px) {
