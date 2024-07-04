@@ -693,6 +693,11 @@ top: 45%;
   padding: 10px;
   border-radius: 18px;
 }
+.foot > p{
+  font-size: 16px;
+  font-weight: 500;
+  margin: 10px;
+}
 
 
 
