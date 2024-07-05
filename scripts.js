@@ -490,6 +490,8 @@ const avatar = document.querySelector('.avatar');
             const savedTopic = localStorage.getItem("savedTopic") || "top stories"; // Set default to "top stories"
             document.getElementById("topicInput").value = savedTopic;
             loadRSS(savedTopic);
+            
+            
         });
 
         function loadRSS(savedTopic = null) {
