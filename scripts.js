@@ -481,3 +481,26 @@ const avatar = document.querySelector('.avatar');
                 reader.readAsDataURL(file);
             }
         });
+        
+        
+        
+        
+        
+        document.addEventListener("DOMContentLoaded", () => {
+            const savedTopic = localStorage.getItem("savedTopic") || "top stories"; // Set default to "top stories"
+            document.getElementById("topicInput").value = savedTopic;
+            loadRSS(savedTopic);
+        });
+
+        function loadRSS(savedTopic = null) {
+            const topicInput = document.getElementById('topicInput').value.trim().toLowerCase();
+            const topic = savedTopic || topicInput || "top stories"; // Default to "top stories" if input is empty
+            localStorage.setItem("savedTopic", topic);
+            
+            const rssUrl = `//rss.bloople.net/?url=https%3A%2F%2Fnews.google.com%2Frss%2Fsearch%3Fq%3D${topic}%26hl%3Den&detail=-1&limit=10&showempty=true&type=js`;
+            
+            const script = document.createElement('script');
+            script.src = rssUrl;
+            document.getElementById('newsContainer').innerHTML = ''; // Clear previous results
+            document.getElementById('newsContainer').appendChild(script);
+        }
