@@ -128,7 +128,7 @@ text-align: center;
    max-width: 90%;
    transition: 0.2s ease;
  width: 100%;
-
+backdrop-filter: brightness(0.5);
  
   }
 
