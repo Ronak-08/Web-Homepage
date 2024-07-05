@@ -725,6 +725,7 @@ top: 45%;
         .tab button {
           background-color: transparent;
           display: flex;
+          flex-direction: row;
           justify-content: space-between;
           align-items: center;
             border: none;
