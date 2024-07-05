@@ -737,6 +737,7 @@ top: 45%;
          justify-content: space-between;
          align-items: center;
          padding: 5px;
+           border-radius: 16px;
         }
         .tab button {
           background-color: transparent;
@@ -749,7 +750,7 @@ top: 45%;
             padding: 12px;
             transition: 0.3s;
             border-radius: 28px;
-        border-radius: 16px;
+      
         }
         .tab button:hover {
            background-color: var(--srcbar);
