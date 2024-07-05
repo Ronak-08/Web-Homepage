@@ -765,6 +765,7 @@ top: 45%;
 
 .bg {
   background-color: black;
+  border-radius: 16px;
 }
 
 
