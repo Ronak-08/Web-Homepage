@@ -94,6 +94,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 function showPopup() {
+  document.getElementById('overlay').style.display = 'block';
+ 
   var popup = document.getElementById('popup');
   popup.style.display = 'flex';
 }
@@ -107,6 +109,8 @@ function updateName() {
 }
 
 function closePopup() {
+  document.getElementById('overlay').style.display = 'none';
+ 
   var popup = document.getElementById('popup');
   popup.style.display = 'none';
 }
