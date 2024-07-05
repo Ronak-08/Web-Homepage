@@ -723,7 +723,9 @@ top: 45%;
          
         }
         .tab button {
-          
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
             border: none;
             color: var(--accent);
             outline: none;
