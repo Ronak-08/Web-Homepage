@@ -728,7 +728,7 @@ top: 45%;
             color: var(--accent);
             outline: none;
             cursor: pointer;
-            padding: 14px 16px;
+            padding: 10px;
             transition: 0.3s;
             border-radius: 28px;
         }
