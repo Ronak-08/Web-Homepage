@@ -484,10 +484,7 @@ const avatar = document.querySelector('.avatar');
         
         
     
-    document.addEventListener("DOMContentLoaded", () => {
-            const savedTopic = localStorage.getItem("savedTopic") || "top stories"; // Set default to "top stories"
-         
-        });
+ 
 
         function loadRSS(savedTopic = null) {
             const topicInput = document.getElementById('topicInput').value.trim().toLowerCase();
