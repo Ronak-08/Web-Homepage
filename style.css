@@ -763,7 +763,9 @@ top: 45%;
          
         }
 
-
+.bg {
+  background-color: black;
+}
 
 
 @media screen and (min-width:992px) {
