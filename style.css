@@ -723,7 +723,7 @@ top: 45%;
          
         }
         .tab button {
-            background-color: var(--srcbar);
+          
             border: none;
             color: var(--accent);
             outline: none;
@@ -733,10 +733,10 @@ top: 45%;
             border-radius: 28px;
         }
         .tab button:hover {
-            background-color: #ddd;
+           background-color: var(--srcbar);
         }
         .tab button.active {
-            background-color: #ccc;
+          background-color: var(--srcbar);
         }
         .tabcontent {
             display: none;
