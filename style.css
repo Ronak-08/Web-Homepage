@@ -139,7 +139,7 @@ text-align: center;
   height: 100%;
   backdrop-filter: brightness(0.5); /* Applies a dimming effect */
   z-index: 1000;
-
+}
 
 #newName {
   padding:13px;
