@@ -723,6 +723,7 @@ top: 45%;
          
         }
         .tab button {
+          background-color: transparent;
           display: flex;
           justify-content: space-between;
           align-items: center;
