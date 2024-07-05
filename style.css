@@ -720,16 +720,14 @@ top: 45%;
 
 .tab {
             overflow: hidden;
-         
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
         }
         .tab button {
           background-color: transparent;
          width: 80px;
-         display: flex;
          margin: 8px;
-        flex-direction: row;
-        justify-content: space-between;
-         gap: 2rem;
             border: none;
             color: var(--accent);
             outline: none;
