@@ -487,7 +487,7 @@ const avatar = document.querySelector('.avatar');
         document.addEventListener("DOMContentLoaded", () => {
             const savedTopic = localStorage.getItem("savedTopic") || "top stories"; // Set default to "top stories"
             document.getElementById("topicInput").value = savedTopic;
-            loadRSS(savedTopic); // Automatically load the RSS feed
+            loadRSS(savedTopic);
         });
 
         function loadRSS(savedTopic = null) {
@@ -497,17 +497,9 @@ const avatar = document.querySelector('.avatar');
             
             const rssUrl = `//rss.bloople.net/?url=https%3A%2F%2Fnews.google.com%2Frss%2Fsearch%3Fq%3D${topic}%26hl%3Den&detail=-1&limit=10&showempty=true&type=js`;
             
-            // Create a script element
             const script = document.createElement('script');
             script.src = rssUrl;
-            script.onload = () => {
-                // Move the RSS content to the newsContainer
-                const rssContent = document.querySelector('.rss-news-container');
-                if (rssContent) {
-                    document.getElementById('newsContainer').innerHTML = rssContent.innerHTML;
-                }
-            };
             document.getElementById('newsContainer').innerHTML = ''; // Clear previous results
-            document.body.appendChild(script); // Append script to the body
+            document.getElementById('newsContainer').appendChild(script);
         }
         
