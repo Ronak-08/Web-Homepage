@@ -737,6 +737,7 @@ top: 45%;
             padding: 12px;
             transition: 0.3s;
             border-radius: 28px;
+            overflow-x: auto;
         }
         .tab button:hover {
            background-color: var(--srcbar);
