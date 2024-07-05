@@ -719,6 +719,7 @@ top: 45%;
 }
 
 .tab {
+  margin-top: 3rem;
   background-color: black;
             overflow: hidden;
          display: flex;
