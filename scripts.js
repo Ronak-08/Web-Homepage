@@ -483,41 +483,21 @@ const avatar = document.querySelector('.avatar');
         });
         
         
-    function loadRSS(savedTopic = null) {
-  const topicInput = document.getElementById('topicInput').value.trim().toLowerCase();
-  const topic = savedTopic || topicInput || "top stories"; // Default to "top stories" if input is empty
-  localStorage.setItem("savedTopic", topic);
+    
+ function loadRSS(savedTopic = null) {
+    const topicInput = document.getElementById('topicInput').value.trim().toLowerCase();
+    const topic = savedTopic || topicInput || "top stories"; // Default to "top stories" if input is empty
+    localStorage.setItem("savedTopic", topic);
+    
+    const rssUrl = `//rss.bloople.net/?url=https%3A%2F%2Fnews.google.com%2Frss%2Fsearch%3Fq%3D${topic}%26hl%3Den&detail=-1&limit=10&showempty=true&type=js`;
+    
+    const script = document.createElement('script');
+    script.src = rssUrl;
 
-  const rssUrl = `//rss.bloople.net/?url=https%3A%2F%2Fnews.google.com%2Frss%2Fsearch%3Fq%3D${topic}%26hl%3Den&detail=-1&limit=10&showempty=true&type=json&callback=displayNews`;
+    // Clear previous results
+    document.getElementById('newsContainer').innerHTML = '';
 
-  const script = document.createElement('script');
-  script.src = rssUrl;
-
-  // Clear previous results
-  document.getElementById('newsContainer').innerHTML = '';
-
-  // Append script to the head
-  document.head.appendChild(script);
+    // Append script to the newsContainer
+    const newsContainer = document.getElementById('newsContainer');
+    newsContainer.appendChild(script);
 }
-
-function displayNews(data) {
-  const newsContainer = document.getElementById('newsContainer');
-  data.items.forEach(item => {
-    const newsItem = document.createElement('div');
-    newsItem.innerHTML = `<h2>${item.title}</h2><p>${item.description}</p>`;
-    newsContainer.appendChild(newsItem);
-  });
-}
-
-// Add event listener to the search button
-document.getElementById('searchButton').addEventListener('click', () => {
-  loadRSS();
-});
-
-// Load saved topic on page load
-window.addEventListener('load', () => {
-  const savedTopic = localStorage.getItem('savedTopic');
-  if (savedTopic) {
-    loadRSS(savedTopic);
-  }
-});
