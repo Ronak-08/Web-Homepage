@@ -323,8 +323,6 @@ flex-wrap: wrap;
   border-radius: 13px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
     max-width: 100%;
     margin: 10px auto;
     font-size: 14px;
@@ -341,7 +339,6 @@ ul {
     margin: 0px;
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 .container > li {
