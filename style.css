@@ -716,7 +716,6 @@ top: 45%;
   align-items: center;
   background-color: var(--srcbar);
   border-radius: 28px;
-  height: 49px;
 }
 
 @media screen and (min-width:992px) {
