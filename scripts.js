@@ -489,39 +489,15 @@ const avatar = document.querySelector('.avatar');
     const topic = savedTopic || topicInput || "top stories"; // Default to "top stories" if input is empty
     localStorage.setItem("savedTopic", topic);
     
-    const rssUrl = `https://news.google.com/rss/search?q=${encodeURIComponent(topic)}&hl=en&gl=US&ceid=US:en`;
+    const rssUrl = `//rss.bloople.net/?url=https%3A%2F%2Fnews.google.com%2Frss%2Fsearch%3Fq%3D${topic}%26hl%3Den&detail=-1&limit=10&showempty=true&type=js`;
+    
+    const script = document.createElement('script');
+    script.src = rssUrl;
 
-    fetch(`https://api.allorigins.win/get?url=${encodeURIComponent(rssUrl)}`)
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('Network response was not ok');
-            }
-            return response.json();
-        })
-        .then(data => {
-            const parser = new DOMParser();
-            const xmlDoc = parser.parseFromString(data.contents, "application/xml");
+    // Clear previous results
+    document.getElementById('newsContainer').innerHTML = '';
 
-            const items = xmlDoc.querySelectorAll("item");
-            const newsContainer = document.getElementById('newsContainer');
-            newsContainer.innerHTML = '';
-
-            items.forEach(item => {
-                const title = item.querySelector("title").textContent;
-                const link = item.querySelector("link").textContent;
-                const description = item.querySelector("description").textContent;
-
-                const newsItem = document.createElement('div');
-                newsItem.className = 'news-item';
-                newsItem.innerHTML = `
-                    <h3>${title}</h3>
-                    <p>${description}</p>
-                    <a href="${link}" target="_blank">Read more</a>
-                `;
-                newsContainer.appendChild(newsItem);
-            });
-        })
-        .catch(error => {
-            console.error('Error fetching RSS feed:', error);
-        });
+    // Append script to the newsContainer
+    const newsContainer = document.getElementById('newsContainer');
+    newsContainer.appendChild(script);
 }
