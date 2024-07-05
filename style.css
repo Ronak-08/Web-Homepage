@@ -724,9 +724,7 @@ top: 45%;
         }
         .tab button {
           background-color: transparent;
-         
-          justify-content: space-between;
-          align-items: center;
+         width: 25px;
             border: none;
             color: var(--accent);
             outline: none;
