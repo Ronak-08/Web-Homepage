@@ -725,6 +725,7 @@ top: 45%;
         .tab button {
           background-color: transparent;
          width: 25px;
+         gap: 2rem;
             border: none;
             color: var(--accent);
             outline: none;
