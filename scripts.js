@@ -204,7 +204,7 @@ function setColorAndStor(color) {
 // Event listener for when the color picker value changes
 document.getElementById('colorPicker').addEventListener('input', function() {
     let hexColor = this.value;
-    let rgbaColor = hexToRgba(hexColor, 0.329); // Always set alpha to 0.329 (33% opacity)
+    let rgbaColor = hexToRgba(hexColor, 0.429); // Always set alpha to 0.329 (33% opacity)
 
     // Set the color and store it in local storage
     setColorAndStor(rgbaColor);
