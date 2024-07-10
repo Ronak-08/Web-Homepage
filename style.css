@@ -68,6 +68,11 @@ body {
   height: 45px;
  
 }
+#city-input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
 .city > button , .link {
   border-radius: 32px;
