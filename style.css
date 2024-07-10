@@ -335,10 +335,6 @@ flex-wrap: wrap;
 
 
 
-ul {
-    list-style-type: none;
-    padding: 10px;
-}
 
 .container > li {
     margin: 8px;
