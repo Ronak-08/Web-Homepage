@@ -66,6 +66,7 @@ body {
   outline: none;
   background: #5c626200;
   height: 45px;
+  width: 200px;
 }
 
 .city > button, .link {
