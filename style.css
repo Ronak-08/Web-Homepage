@@ -557,7 +557,7 @@ input:checked + .slider:before {
   
 }
 
-.wrap , .city , #urlInput{
+.wrap , #city-input , #urlInput{
   display: flex;
   justify-content: space-between;
   align-items: center;
