@@ -66,10 +66,10 @@ body {
   outline: none;
   background: #5c626200;
   height: 45px;
-  width: 200px;
+ 
 }
 
-.city > button, .link {
+.link {
   border-radius: 32px;
   border: none;
   padding: 8px;
@@ -897,6 +897,7 @@ li {
   padding: 10px;
   margin: 10px;
   height: 40px;
+  border-radius: 32px;
 }
 #city-input {
   height: 40px;
