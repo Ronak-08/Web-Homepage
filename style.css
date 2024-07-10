@@ -581,9 +581,10 @@ input:checked + .slider:before {
 }
  
 .settings {
-  margin: 40px 5px 10px;
+  margin: 40px 5px;
   background-color: black;
   border-radius: 22px;
+  padding: 10px;
 }
 
 
