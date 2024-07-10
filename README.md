@@ -25,12 +25,13 @@ https://ronak-08.github.io/Web-Homepage
 - **Latest News:** Stay informed with the latest headlines conveniently displayed.
 - **Random Background Image:** Random image in background, toogle it in settings.
 - **Custom Accent Color:** make your favourite color the accent of the entire website
+- **Custom Logo** Add your favourite image to the logo.
 
 **Note:** ***Click on name to input new name***
   
 ## Screenshots 📷
 
-![screenshot](Images/Screenshot_20240629-135813.png)
+![screenshot](Images/Screenshot_20240710-171228.png)
 
 ![screenshot](Images/Screenshot_20240629-140049.png)
 
