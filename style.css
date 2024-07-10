@@ -898,6 +898,9 @@ li {
   margin: 10px;
   height: 40px;
   border-radius: 32px;
+  border: none;
+  margin: 5px;
+  padding: 10px;
 }
 #city-input {
   height: 40px;
