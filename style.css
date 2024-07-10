@@ -581,7 +581,7 @@ input:checked + .slider:before {
 }
  
 .settings {
-  margin: 40px 5px;
+  margin: 40px 5px 10px;
   background-color: black;
   border-radius: 22px;
 }
