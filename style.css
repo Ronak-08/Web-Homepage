@@ -562,7 +562,7 @@ input:checked + .slider:before {
   justify-content: space-between;
   align-items: center;
   height: 60px;
- 
+ flex-direction: row;
 }
 
 .settings p {
