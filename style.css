@@ -70,7 +70,7 @@ body {
 }
 
 
-.wrap > button , .link {
+.city > button , .link {
   border-radius: 32px;
   border: none;
   padding: 8px;
