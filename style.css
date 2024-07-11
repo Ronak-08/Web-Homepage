@@ -71,7 +71,7 @@ body {
 }
 
 
-.city > button , .link {
+.wrap > button , .link {
   border-radius: 32px;
   border: none;
   padding: 8px;
