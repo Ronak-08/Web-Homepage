@@ -373,6 +373,7 @@ align-items: center;
 .feed-item-title > a{
     text-decoration: none;
   color: #e4e4e4; !important
+  text-overflow: ellipsis;
 }
 
 .feed-title  {
