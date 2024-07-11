@@ -367,10 +367,10 @@ border-bottom: 1px solid var(--accent);
   margin: 10px;
   font-weight: 500;
   line-height: 22px;
-  white-space: nowrap;
+
   overflow: hidden;
   text-overflow: ellipsis;
-  height: 300px;
+  height: 150px;
 }
 
 
