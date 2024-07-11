@@ -368,10 +368,12 @@ border-bottom: 1px solid var(--accent);
 align-items: center;
   height: 100px;
   display: flex;
-  text-decoration: none;
+
+}
+.feed-item-title > a{
+    text-decoration: none;
   color: #e4e4e4; !important
 }
-
 
 .feed-title  {
 padding: 10px;
