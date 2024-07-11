@@ -718,7 +718,10 @@ top: 45%;
   padding: 10px;
   margin: 7px;
 }
-
+.Link > a {
+  color: var(--accent);
+  transform: scale(0.9);
+}
 .tab {
   margin-top: 3rem;
   background-color: black;
