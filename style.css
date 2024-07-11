@@ -183,7 +183,7 @@ background: rgba(0, 0, 0, 0.5);
 
 
 
-.popup > button:hover, .city > button:hover, .link:hover  {
+.popup > button:hover, .wrap > button:hover, .link:hover  {
    background-color: var(--accent);
           color: #353434;
           transform: scale(1.04);
