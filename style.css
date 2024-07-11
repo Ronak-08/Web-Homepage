@@ -915,7 +915,10 @@ justify-content: center;
 .settings {
 margin:4rem;
 }
-
+.popup{
+  margin: 0 auto;
+  max-width: 50%;
+}
 }
 
 @media only screen and (min-width: 768px) {
