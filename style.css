@@ -368,6 +368,7 @@ border-bottom: 1px solid var(--accent);
 align-items: center;
   height: 100px;
   display: flex;
+  text-decoration-style: none;
 }
 
 
