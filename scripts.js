@@ -236,7 +236,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 document.addEventListener('DOMContentLoaded', function () {
     var checkbox = document.getElementById('toggle');
-    var container = document.querySelector('.container');
+    var container = document.querySelector('.bg');
 
     // Check localStorage for saved state
     var isChecked = localStorage.getItem('newsDisabled') === 'true';
