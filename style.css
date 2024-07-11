@@ -715,9 +715,10 @@ top: 45%;
   background-color: var(--srcbar);
   border-radius: 45px;
   color: #e4e4e4;
-  letter-spacing: -0.2px;
   text-decoration: none;
-  transition: 0.3s ease;
+  transition: 0.2s ease;
+  padding: 10px;
+  margin: 7px;
 }
 
 .tab {
