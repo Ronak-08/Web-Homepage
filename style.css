@@ -364,6 +364,7 @@ border-bottom: 1px solid var(--accent);
   padding: 15px;
   margin: 10px;
   font-weight: 500;
+  line-height: 10px;
 }
 
 
