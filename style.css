@@ -794,6 +794,10 @@ top: 45%;
 .bg {
  margin: 20px;
 }
+.tab {
+  justify-content: center;
+  gap: 5rem;
+}
 
 .weather{
   width: 120px;
