@@ -704,8 +704,6 @@ top: 45%;
   justify-content: center;
   align-items: center;
   font-size: 20px;
-  color: var(--accent);
-  border-radius: 28px;
   padding: 5px;
 }
 .Link > a {
