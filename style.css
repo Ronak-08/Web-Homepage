@@ -953,10 +953,7 @@ margin:4rem;
   .avatar{
     margin-top:3rem;
   }
-  li {
-    font-size: 18px;
-    padding: 18px;
-  }
+
 .settings{
   font-size: 16px;
 }
@@ -980,8 +977,14 @@ margin:4rem;
   .weather {
     max-width: 80%;
     font-size: 30px;
-  
   }
+    .search-engine-selector {
+  position: relative;
+  left: 10px;
+  color: black;
+  background: var(--accent);
+  padding: 10px;
+}
 }
 
 @media and screen and (max-width: 600px){
