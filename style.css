@@ -361,7 +361,7 @@ border-bottom: 1px solid var(--accent);
   text-align: left;
   background-color: #505050;
   border-radius: 16px;
-  
+  padding: auto;
 }
 
 
@@ -372,10 +372,8 @@ margin-bottom: 0.5rem;
 
  a{
   border-radius: 45px;
-  padding: 15px;
   color: #e4e4e4;
   letter-spacing: -0.2px;
-  margin: 10px;
   text-decoration: none;
   transition: 0.3s ease;
 }
