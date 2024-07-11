@@ -369,7 +369,7 @@ align-items: center;
   height: 100px;
   display: flex;
   text-decoration: none;
-  color: #e4e4e4;
+  color: #e4e4e4; !important
 }
 
 
