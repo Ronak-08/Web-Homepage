@@ -713,7 +713,11 @@ top: 45%;
   justify-content: center;
   align-items: center;
   background-color: var(--srcbar);
-  border-radius: 28px;
+  border-radius: 45px;
+  color: #e4e4e4;
+  letter-spacing: -0.2px;
+  text-decoration: none;
+  transition: 0.3s ease;
 }
 
 .tab {
