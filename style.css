@@ -376,13 +376,7 @@ padding: 10px;
 margin-bottom: 1.1rem;
 }
 
- a{
-  border-radius: 45px;
-  color: #e4e4e4;
-  letter-spacing: -0.2px;
-  text-decoration: none;
-  transition: 0.3s ease;
-}
+
 
 .greet {
   display: flex;
