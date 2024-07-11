@@ -774,7 +774,10 @@ top: 45%;
   justify-content: center;
   align-items: center;
 }
-
+#suggestions {
+  width: 600px;
+  margin: 0 auto;
+}
 .search-engine-selector{
   position: relative;
   left: 10px;
