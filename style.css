@@ -369,10 +369,6 @@ align-items: center;
   height: 100px;
   display: flex;
 }
-.feed-item-title > a {
-     overflow-y: hidden;
-  text-overflow: ellipsis;
-}
 
 
 .feed-title  {
