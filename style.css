@@ -791,7 +791,9 @@ top: 45%;
             height: 56px; /* New height */
             border-radius: 16pc; /* New border radius */
         }
-
+.bg {
+  margin: 10px;
+}
 
 .weather{
   width: 120px;
