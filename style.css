@@ -363,6 +363,7 @@ border-bottom: 1px solid var(--accent);
   border-radius: 16px;
   padding: 10px;
   margin: 10px;
+  font-weight: 500;
 }
 
 
