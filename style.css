@@ -718,7 +718,7 @@ top: 45%;
   padding: 10px;
   margin: 7px;
 }
-.Link > a {
+.Link > a:hover {
   color: var(--accent);
   transform: scale(0.9);
 }
