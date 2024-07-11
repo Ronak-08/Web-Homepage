@@ -902,22 +902,18 @@ li {
   height: 40px;
   border-radius: 32px;
   border: none;
-  margin: 5px;
-  padding: 10px;
 }
 #city-input {
   height: 40px;
   width: 240px;
   padding: 10px;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .settings {
 margin:4rem;
 }
-.settings > p {
-  font-size: 20px;
-}
+
 }
 
 @media only screen and (min-width: 768px) {
