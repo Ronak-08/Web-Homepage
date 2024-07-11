@@ -361,7 +361,8 @@ border-bottom: 1px solid var(--accent);
   text-align: left;
   background-color: #505050;
   border-radius: 16px;
-  padding: auto;
+  padding: 10px;
+  margin: 10px;
 }
 
 
