@@ -368,7 +368,7 @@ border-bottom: 1px solid var(--accent);
 align-items: center;
   overflow-y: hidden;
   text-overflow: ellipsis;
-  height: 130px;
+  height: 100px;
 }
 
 
