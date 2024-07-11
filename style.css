@@ -938,7 +938,10 @@ margin:4rem;
     margin-bottom: 3vh;
     margin-top: 3vh;
   }
-  
+  #suggestions {
+    width: 400px;
+    margin: 0 auto;
+  }
   .search-engine-selector {
   position: relative;
   left: 10px;
