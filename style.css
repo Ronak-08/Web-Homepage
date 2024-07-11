@@ -329,8 +329,6 @@ flex-wrap: wrap;
   align-items: center;
   justify-content: center;
     max-width: 100%;
-    
-    overflow: hidden;
     margin: 10px auto;
     font-size: 14px;
     padding: auto;
@@ -368,9 +366,9 @@ border-bottom: 1px solid var(--accent);
   font-weight: 500;
   line-height: 22px;
 
-  overflow: hidden;
+  overflow-y: hidden;
   text-overflow: ellipsis;
-  height: 150px;
+  height: 130px;
 }
 
 
