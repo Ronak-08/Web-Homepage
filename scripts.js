@@ -248,7 +248,7 @@ document.addEventListener('DOMContentLoaded', function () {
         if (disabled) {
             container.style.display = "none";
         } else {
-            container.style.display = "flex";
+            container.style.display = "block";
         }
     }
 
