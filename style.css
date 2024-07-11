@@ -369,6 +369,7 @@ align-items: center;
   overflow-y: hidden;
   text-overflow: ellipsis;
   height: 100px;
+  display: flex;
 }
 
 
