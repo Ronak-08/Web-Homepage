@@ -366,12 +366,14 @@ border-bottom: 1px solid var(--accent);
   font-weight: 500;
   line-height: 22px;
 align-items: center;
-  overflow-y: hidden;
-  text-overflow: ellipsis;
+ 
   height: 100px;
   display: flex;
 }
-
+.container > a {
+   overflow-y: hidden;
+  text-overflow: ellipsis;
+}
 
 .feed-title  {
 padding: 10px;
