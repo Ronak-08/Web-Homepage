@@ -370,10 +370,7 @@ align-items: center;
   height: 100px;
   display: flex;
 }
-.container > a {
-   overflow-y: hidden;
-  text-overflow: ellipsis;
-}
+
 
 .feed-title  {
 padding: 10px;
@@ -386,6 +383,9 @@ margin-bottom: 1.1rem;
   letter-spacing: -0.2px;
   text-decoration: none;
   transition: 0.3s ease;
+   overflow-y: hidden;
+  text-overflow: ellipsis;
+
 }
 
 .greet {
