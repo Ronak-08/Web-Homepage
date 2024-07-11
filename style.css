@@ -942,6 +942,10 @@ margin:4rem;
   .setList {
     font-size: 18px;
   }
+.bg {
+ max-width: 80%;
+ margin: 0 auto;
+}
 
   .greet {
     margin-bottom: 15px;
