@@ -792,7 +792,7 @@ top: 45%;
             border-radius: 16pc; /* New border radius */
         }
 .bg {
-  margin: 10px;
+  max-width: 70%;
 }
 
 .weather{
