@@ -949,6 +949,10 @@ margin:4rem;
  max-width: 80%;
  margin: 0 auto;
 }
+.popup{
+  margin: 0 auto;
+  max-width: 50%;
+}
 
   .greet {
     margin-bottom: 15px;
