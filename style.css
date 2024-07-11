@@ -827,7 +827,6 @@ right:20px;
 }
 .wrapper {
   flex-direction: row;
-
 }
 .icons {
  font-size: 38px;
@@ -847,7 +846,6 @@ justify-content: center;
 
 .time {
   background: #5c626200;
-  
   margin: 0px;
 }
 
@@ -860,7 +858,6 @@ justify-content: center;
   position: absolute;
   top: 230px;
   left: 130px;
-  
   font-size: 20px;
   font-weight: 600;
 }
@@ -873,9 +870,7 @@ justify-content: center;
   margin-top: 3vh;
 
 }
-li {
-    line-height: 40px;
-}
+
 .avatar{
   position: absolute;
   width: 100px;
